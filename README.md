@@ -1,6 +1,8 @@
 <div align="center">
 
-  <img src="assets/img/banner.png" alt="BetoGraf Almacenero" width="100%" />
+  <img src="./banner.png" alt="BetoGraf Almacenero" width="100%" />
+
+  <banner.png" alt="BetoGraf Almacenero" width="100%" />
 
   <br />
   <br />
@@ -110,7 +112,7 @@
 
 ## La experiencia que transmite
 
-No queriamos una app que solo "funcione".  
+No queriamos una app que solo "funcione".
 Queriamos una app que, al verla abierta en el negocio, comunique de inmediato:
 
 - orden
@@ -125,7 +127,7 @@ Ese es uno de los grandes valores de esta release 1.5.
 
 ## Seguridad y confianza sin tecnicismos innecesarios
 
-El cliente no necesita saber toda la ingenieria interna.  
+El cliente no necesita saber toda la ingenieria interna.
 Lo importante es esto:
 
 - la operacion fue pensada con enfoque local-first
@@ -167,7 +169,7 @@ En simple: **no es una app improvisada**.
 
 ## Por que puede ser una buena inversion
 
-Porque una buena app POS no solo cobra.  
+Porque una buena app POS no solo cobra.
 Tambien te ayuda a:
 
 - ahorrar tiempo
@@ -196,8 +198,8 @@ Cuando un sistema te permite trabajar con mas seguridad y mas control, deja de s
 
 **BetoGraf Almacenero 1.5 Release** esta pensado para eso.
 
-No para verse complejo.  
-No para llenarte de pasos innecesarios.  
+No para verse complejo.
+No para llenarte de pasos innecesarios.
 No para ser otra herramienta mas que termina abandonada.
 
 Sino para ayudarte a vender, controlar y crecer con una base mucho mas seria.
@@ -220,5 +222,5 @@ Sino para ayudarte a vender, controlar y crecer con una base mucho mas seria.
 
 ## Cierre
 
-Si buscas una app generica, hay muchas opciones.  
+Si buscas una app generica, hay muchas opciones.
 Si buscas una solucion que se sienta seria, moderna, comercial y pensada para el ritmo real de un negocio de barrio, **BetoGraf Almacenero puede ser exactamente la decision correcta**.
