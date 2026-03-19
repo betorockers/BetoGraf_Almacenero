@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="./banner.png" alt="BetoGraf Almacenero" width="100%"  banner.png" alt="BetoGraf Almacenero" width="100%" />
+  <img src="./banner.png" alt="BetoGraf Almacenero" width="100%"/>
 
   <br />
   <br />
