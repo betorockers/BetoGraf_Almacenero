@@ -34,7 +34,7 @@
         </a>
       </td>
       <td align="center" width="50%">
-        <a href="https://github.com/betorockers/BetoGraf_Almacenero/releases/download/v2.0.6/BetoGraf.Almacenero.Demo.Setup.exe">
+        <a href="https://github.com/betorockers/BetoGraf_Almacenero/releases/download/v2.0.6/BetoGraf_Almacen_Setup_v2.0.6.exe">
           <img src="https://img.shields.io/badge/Descargar_para-Windows_(.exe)-1e293b?style=for-the-badge&logo=windows&logoColor=0078D6" alt="Descargar para Windows" /><br />
           <b>v2.0.6 (x64)</b>
         </a>
@@ -76,7 +76,7 @@ El instalador viene empaquetado en formato estándar `.deb` compatible con siste
 ### 🪟 En Windows (10 / 11)
 El instalador viene empaquetado en un asistente interactivo autogestionado.
 
-1. **Descarga** el archivo `BetoGraf.Almacenero.Demo.Setup.exe`.
+1. **Descarga** el archivo `BetoGraf_Almacen_Setup_v2.0.6.exe`.
 2. Haz doble clic sobre el instalador y sigue los pasos del asistente en pantalla.
 3. Al finalizar, la aplicación creará accesos directos automáticos en tu Escritorio y en el Menú Inicio.
 
