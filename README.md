@@ -1,157 +1,156 @@
+# 🛡️ BetoGraf Almacenero POS — Versión 2.0.6
+
 <div align="center">
-
-  <img src="./banner.png" alt="BetoGraf Almacenero" width="100%"/>
+  <img src="./banner.png" alt="BetoGraf Almacenero" width="100%" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);" />
 
   <br />
-  <br />
-
-  # BetoGraf Almacenero v2.0.6 Release
-
-  **Una experiencia POS moderna, profesional, blindada y pensada para comercios reales.**
+  
+  ### **El Punto de Venta (POS) Profesional, Blindado y Offline-First para Comercios Exigentes**
+  
+  *Una solución local de alto rendimiento diseñada bajo estándares de ingeniería de software para maximizar la velocidad de cobro, resguardar tus datos y mantener tu negocio siempre activo.*
 
   <p>
-    <img src="https://img.shields.io/badge/POS-Profesional-1f8b4c?style=for-the-badge" alt="POS Profesional" />
-    <img src="https://img.shields.io/badge/Operacion-Local_First-1e293b?style=for-the-badge" alt="Operacion Local First" />
-    <img src="https://img.shields.io/badge/Version-2.0.6_Release-c69214?style=for-the-badge" alt="Version 2.0.6 Release" />
-    <img src="https://img.shields.io/badge/Licenciamiento-Demo_Trial_Full-4f46e5?style=for-the-badge" alt="Licenciamiento" />
+    <a href="https://github.com/betorockers/BetoGraf_Almacenero/releases/tag/v2.0.6">
+      <img src="https://img.shields.io/badge/Versi%C3%B3n-2.0.6_Estable-c69214?style=for-the-badge&logo=github" alt="Versión 2.0.6" />
+    </a>
+    <img src="https://img.shields.io/badge/Tecnolog%C3%ADa-Django_&_Waitress-1f8b4c?style=for-the-badge&logo=django" alt="Django Stack" />
+    <img src="https://img.shields.io/badge/Cifrado-SQLCipher_3-4f46e5?style=for-the-badge&logo=sqlite" alt="SQLCipher 3" />
+    <img src="https://img.shields.io/badge/Soporte-Windows_&_Linux-0078D6?style=for-the-badge&logo=windows" alt="Multiplataforma" />
   </p>
 
   <p>
-    <b>No es solo un sistema para cobrar.</b><br />
-    Es una herramienta para vender con más orden, controlar mejor tu negocio y dar una imagen más seria frente a tus clientes.
+    <b>¿Cansado de los sistemas lentos basados en la nube?</b><br />
+    BetoGraf Almacenero opera directamente en tu equipo físico. Tus datos se quedan en tu máquina, cifrados bajo estándares de grado militar, y el sistema responde de forma instantánea sin requerir conexión a internet.
   </p>
+</div>
 
-  ---
+---
 
-  ### ⬇️ DESCARGA DIRECTA DE INSTALADORES ⬇️
+## ⚡ Descarga Rápida de Instaladores Oficiales (v2.0.6)
 
-  <table>
-    <tr>
-      <td align="center" width="50%">
-        <a href="https://github.com/betorockers/BetoGraf_Almacenero/releases/download/v2.0.6/betograf-almacenero_2.0.6_amd64.deb">
-          <img src="https://img.shields.io/badge/Descargar_para-Linux_(.deb)-1e293b?style=for-the-badge&logo=linux&logoColor=FCB900" alt="Descargar para Linux" /><br />
-          <b>v2.0.6 (AMD64)</b>
-        </a>
+A continuación, selecciona tu plataforma para descargar el instalador oficial optimizado:
+
+<div align="center">
+  <table style="width: 90%; border-collapse: collapse; border: 1px solid #e2e8f0;">
+    <thead>
+      <tr style="background-color: #f8fafc;">
+        <th align="center" style="padding: 12px; border: 1px solid #e2e8f0; width: 50%;">🪟 Versión para Windows</th>
+        <th align="center" style="padding: 12px; border: 1px solid #e2e8f0; width: 50%;">🐧 Versión para Linux</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center" style="padding: 20px; border: 1px solid #e2e8f0; vertical-align: top;">
+          <a href="https://github.com/betorockers/BetoGraf_Almacenero/releases/download/v2.0.6/BetoGraf_Almacen_Setup_v2.0.6.exe">
+            <img src="https://img.shields.io/badge/Descargar_para-Windows_(.exe)-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Descargar para Windows" />
+          </a>
+          <br /><br />
+          <b>BetoGraf_Almacen_Setup_v2.0.6.exe</b><br />
+          <small style="color: #64748b;">Instalador autogestionado para Windows 10 y 11 (64-bits)</small><br />
+          <span style="display: inline-block; margin-top: 8px; padding: 2px 8px; background-color: #f1f5f9; color: #475569; font-size: 11px; border-radius: 4px; font-family: monospace;">Tamaño: ~47.6 MB</span>
+        </td>
+        <td align="center" style="padding: 20px; border: 1px solid #e2e8f0; vertical-align: top;">
+          <a href="https://github.com/betorockers/BetoGraf_Almacenero/releases/download/v2.0.6/betograf-almacenero_2.0.6_amd64.deb">
+            <img src="https://img.shields.io/badge/Descargar_para-Linux_(.deb)-1e293b?style=for-the-badge&logo=linux&logoColor=FCB900" alt="Descargar para Linux" />
+          </a>
+          <br /><br />
+          <b>betograf-almacenero_2.0.6_amd64.deb</b><br />
+          <small style="color: #64748b;">Paquete nativo para Debian, Ubuntu, Linux Mint y derivados</small><br />
+          <span style="display: inline-block; margin-top: 8px; padding: 2px 8px; background-color: #f1f5f9; color: #475569; font-size: 11px; border-radius: 4px; font-family: monospace;">Tamaño: ~50.4 MB</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+---
+
+## 💼 Matriz de Licenciamiento y Módulos
+
+BetoGraf Almacenero cuenta con un esquema de licenciamiento escalable según tus necesidades operativas:
+
+| Módulo Operativo | 🧪 Demo | ⏳ Trial (20 Días) | 💎 Comercial (Full) |
+| :--- | :---: | :---: | :---: |
+| **Punto de Venta (Caja y Ventas)** | Limitado (5 productos) | ✅ Completo | ✅ Ilimitado |
+| **Control de Turnos y Efectivo** | ✅ Básico | ✅ Completo | ✅ Completo |
+| **Gestión de Inventario FIFO** | ❌ Inactivo | ✅ Completo | ✅ Completo |
+| **Reportes Financieros Avanzados** | ❌ Inactivo | ✅ Completo | ✅ Completo |
+| **Omnicanalidad (WhatsApp/IG)** | ❌ Inactivo | ✅ Completo | ✅ Completo |
+| **Sincronización Cloud (Respaldos)** | ❌ Inactivo | ✅ Opcional | ✅ Integrado |
+| **Soporte Prioritario y OTA Updates** | ❌ Inactivo | ❌ Inactivo | ✅ Permanente |
+
+---
+
+## 🛠️ Especificaciones Técnicas (Ficha de Ingeniería)
+
+El núcleo del sistema ha sido rediseñado en la versión **2.0.6** para asegurar una estabilidad del 99.9% frente a cortes eléctricos o de red:
+
+*   **Arquitectura de Backend**: Django 5.x integrado con **Waitress WSGI**, garantizando una API local robusta, de alta concurrencia y sin fugas de memoria.
+*   **Seguridad de Datos**: Base de datos SQLite cifrada nativamente con **SQLCipher 3** (cifrado AES-256). Tus ventas, costos y clientes están blindados ante accesos físicos no autorizados.
+*   **Carga 100% Offline (Local-First)**: Toda la interfaz gráfica, plantillas e interactividad (Tailwind CSS, Alpine.js y HTMX) se encuentran integrados localmente en los assets. **Funciona a la perfección sin conexión a internet**.
+*   **Interfaz de Usuario Vanguardista**: Renderizado directo mediante el motor de Google Chrome en modo `--app` (interfaz nativa fullscreen, eliminando elementos del navegador para simular una app de escritorio nativa).
+*   **Gestión de Inventario FIFO**: Trazabilidad contable en tiempo real bajo la regla First-In, First-Out (lo primero que entra, es lo primero que se vende), calculando de forma exacta la utilidad neta de tu negocio.
+
+---
+
+## 🚀 Guías de Instalación Paso a Paso
+
+### 🪟 Instalación en Windows (10 / 11)
+
+1. Descarga el archivo de instalación [BetoGraf_Almacen_Setup_v2.0.6.exe](https://github.com/betorockers/BetoGraf_Almacenero/releases/download/v2.0.6/BetoGraf_Almacen_Setup_v2.0.6.exe).
+2. Haz doble clic sobre el ejecutable descargado.
+3. Sigue las instrucciones del asistente en pantalla (se encargará de crear los accesos directos en el escritorio y configurar el Firewall).
+4. Abre **BetoGraf Almacen** desde tu escritorio.
+
+> [!TIP]
+> Si Windows Defender te muestra una advertencia de SmartScreen (debido a que es un ejecutable nuevo compilado a medida), haz clic en **"Más información"** y luego en **"Ejecutar de todas formas"**. El instalador incluye un certificado local seguro.
+
+---
+
+### 🐧 Instalación en Linux (Ubuntu, Mint, Debian y derivados)
+
+1. Descarga el archivo [betograf-almacenero_2.0.6_amd64.deb](https://github.com/betorockers/BetoGraf_Almacenero/releases/download/v2.0.6/betograf-almacenero_2.0.6_amd64.deb).
+2. Abre una terminal en la carpeta donde descargaste el archivo y ejecuta:
+   ```bash
+   sudo dpkg -i betograf-almacenero_2.0.6_amd64.deb
+   ```
+3. Si el instalador te solicita dependencias no instaladas, arréglalo automáticamente con:
+   ```bash
+   sudo apt-get install -f
+   ```
+4. Lanza el POS desde tu menú de aplicaciones buscando **BetoGraf Almacenero** o escribiendo `betograf-almacenero` en la terminal.
+
+---
+
+## ❓ Preguntas Frecuentes (FAQ)
+
+#### ¿Mis datos se suben a algún servidor?
+No de forma obligatoria. Toda la información de tus productos, ventas y cuadratura de caja se guarda localmente en tu equipo. Si cuentas con el módulo comercial activo, puedes habilitar respaldos en la nube en tiempo real.
+
+#### ¿Cómo adquiero una clave de licencia comercial?
+Puedes solicitar una licencia o agendar una demostración comercial personalizada a través de nuestros canales directos.
+
+#### ¿El sistema es compatible con lectores de código de barras?
+Sí, es compatible con cualquier lector de código de barras USB o inalámbrico que funcione en modo emulación de teclado (la gran mayoría del mercado).
+
+---
+
+## 📞 Soporte y Canales Directos
+
+<div align="center">
+  <table style="width: 80%; border-collapse: collapse;">
+    <tr style="background-color: #f8fafc;">
+      <td align="center" style="padding: 15px; border: 1px solid #e2e8f0; width: 50%;">
+        🌐 <b>Sitio Web Oficial</b><br />
+        <a href="https://betograf.cl">betograf.cl</a>
       </td>
-      <td align="center" width="50%">
-        <a href="https://github.com/betorockers/BetoGraf_Almacenero/releases/download/v2.0.6/BetoGraf_Almacen_Setup_v2.0.6.exe">
-          <img src="https://img.shields.io/badge/Descargar_para-Windows_(.exe)-1e293b?style=for-the-badge&logo=windows&logoColor=0078D6" alt="Descargar para Windows" /><br />
-          <b>v2.0.6 (x64)</b>
-        </a>
+      <td align="center" style="padding: 15px; border: 1px solid #e2e8f0; width: 50%;">
+        💬 <b>Contacto por WhatsApp</b><br />
+        <a href="https://wa.me/56933445244">+56 9 3344 5244</a>
       </td>
     </tr>
   </table>
 
   <br />
-
-  <p>
-    <a href="https://betograf.cl"><b>Solicitar información comercial</b></a>
-    &nbsp;|&nbsp;
-    <a href="https://wa.me/56933445244"><b>Hablar por WhatsApp</b></a>
-  </p>
-
-</div>
-
----
-
-## 🚀 Guía de Instalación Rápida
-
-### 🐧 En Linux (Debian, Ubuntu, Linux Mint y derivados)
-El instalador viene empaquetado en formato estándar `.deb` compatible con sistemas de 64 bits.
-
-1. **Descarga** el archivo `betograf-almacenero_2.0.6_amd64.deb` desde el botón superior.
-2. Abre la terminal en la carpeta de descarga y ejecuta:
-   ```bash
-   sudo dpkg -i betograf-almacenero_2.0.6_amd64.deb
-   ```
-3. Si el sistema reporta dependencias faltantes, corrígelas de inmediato ejecutando:
-   ```bash
-   sudo apt-get install -f
-   ```
-4. Abre la aplicación buscando **BetoGraf Almacenero** en tu menú de aplicaciones o directamente desde la terminal escribiendo:
-   ```bash
-   betograf-almacenero
-   ```
-
-### 🪟 En Windows (10 / 11)
-El instalador viene empaquetado en un asistente interactivo autogestionado.
-
-1. **Descarga** el archivo `BetoGraf_Almacen_Setup_v2.0.6.exe`.
-2. Haz doble clic sobre el instalador y sigue los pasos del asistente en pantalla.
-3. Al finalizar, la aplicación creará accesos directos automáticos en tu Escritorio y en el Menú Inicio.
-
----
-
-## 🎯 ¿Esta app es la que necesito para mi negocio?
-
-**Sí**, si tu negocio necesita una solución que te ayude a:
-
-- Vender rápido en mostrador (interfaz optimizada para teclado y pantallas táctiles).
-- Reducir desorden operativo y cuadrar cajas al centavo.
-- Controlar caja, movimientos de efectivo, ventas e inventario desde un solo lugar.
-- Operar local-first (funciona 100% sin internet, manteniendo tu base de datos cifrada y segura en tu propia máquina).
-- Profesionalizar la atención sin complicar al personal con flujos innecesarios.
-
-**BetoGraf Almacenero** fue diseñado para el ritmo real del comercio en:
-- Almacenes de barrio y Minimarkets.
-- Botillerías y Licorerías.
-- Kioscos y Tiendas de Conveniencia.
-- Locales comerciales con uno o varios cajeros.
-
----
-
-## 🛠️ Características Principales
-
-### 🛒 Terminal de Ventas Inteligente
-- Flujo de venta ágil con buscador rápido e ingreso por código de barras.
-- Métodos de pago flexibles y cálculo instantáneo de vuelto.
-- Visualización de descuentos en tiempo real y soporte para boletas/recibos térmicos.
-- Venta a crédito integrada directamente en el flujo de caja.
-
-### 📦 Gestión de Inventario y Productos
-- Control detallado de stock y alertas de vencimiento mediante lotes FIFO.
-- Clasificación intuitiva por categorías con accesos rápidos visuales.
-- Panel de control administrativo limpio y directo.
-
-### 💳 Control de Turnos y Caja
-- Apertura, retiros parciales (sencillo) y cierre de turno.
-- Reportes contables y cuadratura de caja de alta legibilidad.
-- Historial de transacciones y auditoría de auditorías.
-
----
-
-## 🔒 Seguridad y Robustez Comercial
-
-- **Cifrado de Base de Datos**: Respaldado por el motor SQLCipher a nivel de base de datos local para máxima protección contra robo de información física.
-- **Arquitectura Desacoplada**: Desarrollado bajo patrones SOLID y Clean Code, asegurando estabilidad y optimización de recursos.
-- **Activación Segura**: Infraestructura de licenciamiento robusta (Demo, Trial y Comercial) gestionada mediante llaves criptográficas exclusivas.
-
----
-
-## 💎 Versiones Disponibles
-
-| Variante | Propósito | Limitaciones |
-| :--- | :--- | :--- |
-| **Demo** | Evaluación inicial | Capacidad de base de datos acotada para pruebas básicas de flujo. |
-| **Trial** | Validación en terreno | Funcionalidad completa por un periodo de tiempo determinado para validar en operaciones reales. |
-| **Full** | Operación productiva | Acceso total e ilimitado mediante llave de licencia comercial. |
-
----
-
-## 📞 Soporte y Contacto Comercial
-
-<div align="center">
-
-| Canal | Enlace de Contacto |
-| :--- | :--- |
-| **Sitio Web Oficial** | [betograf.cl](https://betograf.cl) |
-| **Soporte por WhatsApp** | [+56 9 3344 5244](https://wa.me/56933445244) |
-| **Foco del Producto** | BetoGraf Almacenero POS |
-
-</div>
-
----
-
-<div align="center">
-  <sub>BetoGraf Almacenero es un producto de BetoGraf. Todos los derechos reservados.</sub>
+  <sub>BetoGraf Almacenero POS es un producto de BetoGraf. Todos los derechos reservados.</sub>
 </div>
