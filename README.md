@@ -5,24 +5,47 @@
   <br />
   <br />
 
-  # BetoGraf Almacenero 1.5 Release
+  # BetoGraf Almacenero v2.0.6 Release
 
-  **Una experiencia POS moderna, profesional y pensada para comercios reales.**
+  **Una experiencia POS moderna, profesional, blindada y pensada para comercios reales.**
 
   <p>
     <img src="https://img.shields.io/badge/POS-Profesional-1f8b4c?style=for-the-badge" alt="POS Profesional" />
     <img src="https://img.shields.io/badge/Operacion-Local_First-1e293b?style=for-the-badge" alt="Operacion Local First" />
-    <img src="https://img.shields.io/badge/Version-1.5_Release-c69214?style=for-the-badge" alt="Version 1.5 Release" />
+    <img src="https://img.shields.io/badge/Version-2.0.6_Release-c69214?style=for-the-badge" alt="Version 2.0.6 Release" />
     <img src="https://img.shields.io/badge/Licenciamiento-Demo_Trial_Full-4f46e5?style=for-the-badge" alt="Licenciamiento" />
   </p>
 
   <p>
     <b>No es solo un sistema para cobrar.</b><br />
-    Es una herramienta para vender con mas orden, controlar mejor tu negocio y dar una imagen mas seria frente a tus clientes.
+    Es una herramienta para vender con más orden, controlar mejor tu negocio y dar una imagen más seria frente a tus clientes.
   </p>
 
+  ---
+
+  ### ⬇️ DESCARGA DIRECTA DE INSTALADORES ⬇️
+
+  <table>
+    <tr>
+      <td align="center" width="50%">
+        <a href="https://github.com/betorockers/BetoGraf_Almacenero/releases/download/v2.0.6/betograf-almacenero_2.0.6_amd64.deb">
+          <img src="https://img.shields.io/badge/Descargar_para-Linux_(.deb)-1e293b?style=for-the-badge&logo=linux&logoColor=FCB900" alt="Descargar para Linux" /><br />
+          <b>v2.0.6 (AMD64)</b>
+        </a>
+      </td>
+      <td align="center" width="50%">
+        <a href="https://github.com/betorockers/BetoGraf_Almacenero/releases/download/v2.0.6/BetoGraf.Almacenero.Demo.Setup.exe">
+          <img src="https://img.shields.io/badge/Descargar_para-Windows_(.exe)-1e293b?style=for-the-badge&logo=windows&logoColor=0078D6" alt="Descargar para Windows" /><br />
+          <b>v2.0.6 (x64)</b>
+        </a>
+      </td>
+    </tr>
+  </table>
+
+  <br />
+
   <p>
-    <a href="https://betograf.cl"><b>Solicitar informacion comercial</b></a>
+    <a href="https://betograf.cl"><b>Solicitar información comercial</b></a>
     &nbsp;|&nbsp;
     <a href="https://wa.me/56933445244"><b>Hablar por WhatsApp</b></a>
   </p>
@@ -31,194 +54,104 @@
 
 ---
 
-## La pregunta mas importante
+## 🚀 Guía de Instalación Rápida
 
-### Esta app es la que necesito para mi negocio?
+### 🐧 En Linux (Debian, Ubuntu, Linux Mint y derivados)
+El instalador viene empaquetado en formato estándar `.deb` compatible con sistemas de 64 bits.
 
-**Si**, si tu negocio necesita una solucion que te ayude a:
+1. **Descarga** el archivo `betograf-almacenero_2.0.6_amd64.deb` desde el botón superior.
+2. Abre la terminal en la carpeta de descarga y ejecuta:
+   ```bash
+   sudo dpkg -i betograf-almacenero_2.0.6_amd64.deb
+   ```
+3. Si el sistema reporta dependencias faltantes, corrígelas de inmediato ejecutando:
+   ```bash
+   sudo apt-get install -f
+   ```
+4. Abre la aplicación buscando **BetoGraf Almacenero** en tu menú de aplicaciones o directamente desde la terminal escribiendo:
+   ```bash
+   betograf-almacenero
+   ```
 
-- vender rapido en mostrador
-- reducir desorden operativo
-- controlar caja, ventas e inventario desde un solo lugar
-- trabajar con una interfaz moderna y clara
-- profesionalizar la atencion sin complicar al personal
+### 🪟 En Windows (10 / 11)
+El instalador viene empaquetado en un asistente interactivo autogestionado.
 
-**BetoGraf Almacenero** fue pensado para negocios que viven el ritmo real del comercio:
-
-- almacenes de barrio
-- minimarkets
-- botillerias
-- kioscos
-- tiendas de conveniencia
-- locales con uno o varios cajeros
-
----
-
-## Lo que cambia cuando lo implementas
-
-<table>
-  <tr>
-    <td width="33%">
-      <h3>Mas velocidad</h3>
-      <p>La venta se siente directa, limpia y comoda. Menos pasos, menos friccion y mejor ritmo de atencion en horas punta.</p>
-    </td>
-    <td width="33%">
-      <h3>Mas control</h3>
-      <p>Productos, clientes, caja, reportes y administracion quedan integrados en una sola operacion visualmente clara.</p>
-    </td>
-    <td width="33%">
-      <h3>Mas imagen</h3>
-      <p>Tu negocio se ve mas serio, mas ordenado y mas preparado para crecer frente a clientes, equipo y socios.</p>
-    </td>
-  </tr>
-</table>
+1. **Descarga** el archivo `BetoGraf.Almacenero.Demo.Setup.exe`.
+2. Haz doble clic sobre el instalador y sigue los pasos del asistente en pantalla.
+3. Al finalizar, la aplicación creará accesos directos automáticos en tu Escritorio y en el Menú Inicio.
 
 ---
 
-## Hecha para vender mejor
+## 🎯 ¿Esta app es la que necesito para mi negocio?
 
-### Terminal de Ventas
+**Sí**, si tu negocio necesita una solución que te ayude a:
 
-- flujo de venta agil y visual
-- metodos de pago claros
-- calculo de vuelto
-- descuento aplicado visible
-- documento de salida integrado
-- operacion comoda en pantallas pequenas y grandes
+- Vender rápido en mostrador (interfaz optimizada para teclado y pantallas táctiles).
+- Reducir desorden operativo y cuadrar cajas al centavo.
+- Controlar caja, movimientos de efectivo, ventas e inventario desde un solo lugar.
+- Operar local-first (funciona 100% sin internet, manteniendo tu base de datos cifrada y segura en tu propia máquina).
+- Profesionalizar la atención sin complicar al personal con flujos innecesarios.
 
-### Carrito y Cobro
-
-- total a pagar con alta visibilidad
-- resumen comercial claro
-- cobro mas compacto y ordenado
-- venta a credito dentro del flujo
-
-### Admin y Reportes
-
-- panel de control mas limpio y util
-- control de productos, categorias, clientes y usuarios
-- reportes contables y de ventas
-- informacion mas facil de leer y usar
-
-### Caja y Operacion
-
-- apertura y cierre de turno
-- mejor orden de movimientos
-- apoyo operativo para supervisar caja
+**BetoGraf Almacenero** fue diseñado para el ritmo real del comercio en:
+- Almacenes de barrio y Minimarkets.
+- Botillerías y Licorerías.
+- Kioscos y Tiendas de Conveniencia.
+- Locales comerciales con uno o varios cajeros.
 
 ---
 
-## La experiencia que transmite
+## 🛠️ Características Principales
 
-No queriamos una app que solo "funcione".
-Queriamos una app que, al verla abierta en el negocio, comunique de inmediato:
+### 🛒 Terminal de Ventas Inteligente
+- Flujo de venta ágil con buscador rápido e ingreso por código de barras.
+- Métodos de pago flexibles y cálculo instantáneo de vuelto.
+- Visualización de descuentos en tiempo real y soporte para boletas/recibos térmicos.
+- Venta a crédito integrada directamente en el flujo de caja.
 
-- orden
-- rapidez
-- profesionalismo
-- control
-- confianza
+### 📦 Gestión de Inventario y Productos
+- Control detallado de stock y alertas de vencimiento mediante lotes FIFO.
+- Clasificación intuitiva por categorías con accesos rápidos visuales.
+- Panel de control administrativo limpio y directo.
 
-Ese es uno de los grandes valores de esta release 1.5.
-
----
-
-## Seguridad y confianza sin tecnicismos innecesarios
-
-El cliente no necesita saber toda la ingenieria interna.
-Lo importante es esto:
-
-- la operacion fue pensada con enfoque local-first
-- existe control de acceso y de licencia
-- la version full opera con activacion por serial
-- la distribucion fue preparada con criterio comercial serio
-- el sistema fue trabajado para una operacion estable y profesional
-
-En simple: **no es una app improvisada**.
+### 💳 Control de Turnos y Caja
+- Apertura, retiros parciales (sencillo) y cierre de turno.
+- Reportes contables y cuadratura de caja de alta legibilidad.
+- Historial de transacciones y auditoría de auditorías.
 
 ---
 
-## Versiones comerciales
+## 🔒 Seguridad y Robustez Comercial
 
-<table>
-  <tr>
-    <th>Version</th>
-    <th>Ideal para</th>
-    <th>Que ofrece</th>
-  </tr>
-  <tr>
-    <td><b>Demo</b></td>
-    <td>Conocer el producto</td>
-    <td>Experiencia limitada por capacidad y tiempo para evaluar la propuesta.</td>
-  </tr>
-  <tr>
-    <td><b>Trial</b></td>
-    <td>Probar el flujo real</td>
-    <td>Permite validar la experiencia de trabajo antes de pasar a una licencia comercial.</td>
-  </tr>
-  <tr>
-    <td><b>Full</b></td>
-    <td>Operacion profesional</td>
-    <td>Acceso completo para uso productivo con activacion por licencia.</td>
-  </tr>
-</table>
+- **Cifrado de Base de Datos**: Respaldado por el motor SQLCipher a nivel de base de datos local para máxima protección contra robo de información física.
+- **Arquitectura Desacoplada**: Desarrollado bajo patrones SOLID y Clean Code, asegurando estabilidad y optimización de recursos.
+- **Activación Segura**: Infraestructura de licenciamiento robusta (Demo, Trial y Comercial) gestionada mediante llaves criptográficas exclusivas.
 
 ---
 
-## Por que puede ser una buena inversion
+## 💎 Versiones Disponibles
 
-Porque una buena app POS no solo cobra.
-Tambien te ayuda a:
-
-- ahorrar tiempo
-- disminuir errores
-- ordenar mejor la operacion
-- ver tu negocio con mas claridad
-- proyectar una imagen mucho mas profesional
-
-Cuando un sistema te permite trabajar con mas seguridad y mas control, deja de ser un gasto y se vuelve una herramienta comercial.
+| Variante | Propósito | Limitaciones |
+| :--- | :--- | :--- |
+| **Demo** | Evaluación inicial | Capacidad de base de datos acotada para pruebas básicas de flujo. |
+| **Trial** | Validación en terreno | Funcionalidad completa por un periodo de tiempo determinado para validar en operaciones reales. |
+| **Full** | Operación productiva | Acceso total e ilimitado mediante llave de licencia comercial. |
 
 ---
 
-## Lo que incluye esta 1.5 Release
-
-- experiencia visual mucho mas refinada
-- mejoras amplias de responsividad en toda la app
-- modulo de ventas mucho mas solido
-- admin mas compacto y mejor aprovechado
-- caja y rrhh mejor alineados
-- base comercial con Demo, Trial y Full
-- infraestructura de licenciamiento lista para distribucion
-
----
-
-## Si hoy quieres profesionalizar tu negocio
-
-**BetoGraf Almacenero 1.5 Release** esta pensado para eso.
-
-No para verse complejo.
-No para llenarte de pasos innecesarios.
-No para ser otra herramienta mas que termina abandonada.
-
-Sino para ayudarte a vender, controlar y crecer con una base mucho mas seria.
-
----
-
-## Contacto comercial
+## 📞 Soporte y Contacto Comercial
 
 <div align="center">
 
-| Canal | Contacto |
-| --- | --- |
-| Web | [betograf.cl](https://betograf.cl) |
-| WhatsApp | [+56 9 3344 5244](https://wa.me/56933445244) |
-| Producto | BetoGraf Almacenero 1.5 Release |
+| Canal | Enlace de Contacto |
+| :--- | :--- |
+| **Sitio Web Oficial** | [betograf.cl](https://betograf.cl) |
+| **Soporte por WhatsApp** | [+56 9 3344 5244](https://wa.me/56933445244) |
+| **Foco del Producto** | BetoGraf Almacenero POS |
 
 </div>
 
 ---
 
-## Cierre
-
-Si buscas una app generica, hay muchas opciones.
-Si buscas una solucion que se sienta seria, moderna, comercial y pensada para el ritmo real de un negocio de barrio, **BetoGraf Almacenero puede ser exactamente la decision correcta**.
+<div align="center">
+  <sub>BetoGraf Almacenero es un producto de BetoGraf. Todos los derechos reservados.</sub>
+</div>
