@@ -1,4 +1,4 @@
-# 🛡️ BetoGraf Almacenero POS — Versión 2.3.9
+# 🛡️ BetoGraf Almacenero POS — Versión 2.9.3
 
 <div align="center">
   <img src="./banner.png" alt="BetoGraf Almacenero" width="100%" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);" />
@@ -10,8 +10,8 @@
   *Una solución local de alto rendimiento diseñada bajo estándares de ingeniería de software para maximizar la velocidad de cobro, resguardar tus datos y mantener tu negocio siempre activo.*
 
   <p>
-    <a href="https://github.com/betorockers/BetoGraf_Almacenero/releases/tag/v2.3.9">
-      <img src="https://img.shields.io/badge/Versi%C3%B3n-2.3.9_Estable-c69214?style=for-the-badge&logo=github" alt="Versión 2.3.9" />
+    <a href="https://github.com/betorockers/BetoGraf_Almacenero/releases/tag/v2.9.3">
+      <img src="https://img.shields.io/badge/Versi%C3%B3n-2.9.3_Estable-c69214?style=for-the-badge&logo=github" alt="Versión 2.9.3" />
     </a>
     <img src="https://img.shields.io/badge/Tecnolog%C3%ADa-Django_&_Waitress-1f8b4c?style=for-the-badge&logo=django" alt="Django Stack" />
     <img src="https://img.shields.io/badge/Cifrado-SQLCipher_3-4f46e5?style=for-the-badge&logo=sqlite" alt="SQLCipher 3" />
@@ -26,7 +26,7 @@
 
 ---
 
-## ⚡ Descarga Rápida de Instaladores Oficiales (v2.3.9)
+## ⚡ Descarga Rápida de Instaladores Oficiales (v2.9.3)
 
 A continuación, selecciona tu plataforma para descargar el instalador oficial optimizado:
 
@@ -41,20 +41,20 @@ A continuación, selecciona tu plataforma para descargar el instalador oficial o
     <tbody>
       <tr>
         <td align="center" style="padding: 20px; border: 1px solid #e2e8f0; vertical-align: top;">
-          <a href="https://github.com/betorockers/BetoGraf_Almacenero/releases/download/v2.3.9/BetoGraf_Almacen_Setup_v2.3.9.exe">
+          <a href="https://github.com/betorockers/BetoGraf_Almacenero/releases/download/v2.9.3/BetoGraf_Almacen_Setup_v2.9.3.exe">
             <img src="https://img.shields.io/badge/Descargar_para-Windows_(.exe)-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Descargar para Windows" />
           </a>
           <br /><br />
-          <b>BetoGraf_Almacen_Setup_v2.3.9.exe</b><br />
+          <b>BetoGraf_Almacen_Setup_v2.9.3.exe</b><br />
           <small style="color: #64748b;">Instalador autogestionado para Windows 10 y 11 (64-bits)</small><br />
           <span style="display: inline-block; margin-top: 8px; padding: 2px 8px; background-color: #f1f5f9; color: #475569; font-size: 11px; border-radius: 4px; font-family: monospace;">Tamaño: ~47.6 MB</span>
         </td>
         <td align="center" style="padding: 20px; border: 1px solid #e2e8f0; vertical-align: top;">
-          <a href="https://github.com/betorockers/BetoGraf_Almacenero/releases/download/v2.3.9/betograf-almacenero_2.3.9_amd64.deb">
+          <a href="https://github.com/betorockers/BetoGraf_Almacenero/releases/download/v2.9.3/betograf-almacenero_2.9.3_amd64.deb">
             <img src="https://img.shields.io/badge/Descargar_para-Linux_(.deb)-1e293b?style=for-the-badge&logo=linux&logoColor=FCB900" alt="Descargar para Linux" />
           </a>
           <br /><br />
-          <b>betograf-almacenero_2.3.9_amd64.deb</b><br />
+          <b>betograf-almacenero_2.9.3_amd64.deb</b><br />
           <small style="color: #64748b;">Paquete nativo para Debian, Ubuntu, Linux Mint y derivados</small><br />
           <span style="display: inline-block; margin-top: 8px; padding: 2px 8px; background-color: #f1f5f9; color: #475569; font-size: 11px; border-radius: 4px; font-family: monospace;">Tamaño: ~50.4 MB</span>
         </td>
@@ -84,7 +84,7 @@ BetoGraf Almacenero cuenta con un esquema de licenciamiento escalable según tus
 
 ## 🛠️ Especificaciones Técnicas (Ficha de Ingeniería)
 
-El núcleo del sistema ha sido rediseñado en la versión **2.3.9** para asegurar una estabilidad del 99.9% frente a cortes eléctricos o de red e integrar soluciones corporativas de alto nivel:
+El núcleo del sistema ha sido rediseñado en la versión **2.9.3** para asegurar una estabilidad del 99.9% frente a cortes eléctricos o de red e integrar soluciones corporativas de alto nivel:
 
 *   **Arquitectura de Backend**: Django 5.x integrado con **Waitress WSGI**, garantizando una API local robusta, de alta concurrencia y sin fugas de memoria.
 *   **Seguridad de Datos**: Base de datos SQLite cifrada nativamente con **SQLCipher 3** (cifrado AES-256). Tus ventas, costos y clientes están blindados ante accesos físicos no autorizados.
@@ -99,7 +99,7 @@ El núcleo del sistema ha sido rediseñado en la versión **2.3.9** para asegura
 
 ### 🪟 Instalación en Windows (10 / 11)
 
-1. Descarga el archivo de instalación [BetoGraf_Almacen_Setup_v2.3.9.exe](https://github.com/betorockers/BetoGraf_Almacenero/releases/download/v2.3.9/BetoGraf_Almacen_Setup_v2.3.9.exe).
+1. Descarga el archivo de instalación [BetoGraf_Almacen_Setup_v2.9.3.exe](https://github.com/betorockers/BetoGraf_Almacenero/releases/download/v2.9.3/BetoGraf_Almacen_Setup_v2.9.3.exe).
 2. Haz doble clic sobre el ejecutable descargado.
 3. Sigue las instrucciones del asistente en pantalla (se encargará de crear los accesos directos en el escritorio y configurar el Firewall).
 4. Abre **BetoGraf Almacen** desde tu escritorio.
@@ -111,10 +111,10 @@ El núcleo del sistema ha sido rediseñado en la versión **2.3.9** para asegura
 
 ### 🐧 Instalación en Linux (Ubuntu, Mint, Debian y derivados)
 
-1. Descarga el archivo [betograf-almacenero_2.3.9_amd64.deb](https://github.com/betorockers/BetoGraf_Almacenero/releases/download/v2.3.9/betograf-almacenero_2.3.9_amd64.deb).
+1. Descarga el archivo [betograf-almacenero_2.9.3_amd64.deb](https://github.com/betorockers/BetoGraf_Almacenero/releases/download/v2.9.3/betograf-almacenero_2.9.3_amd64.deb).
 2. Abre una terminal en la carpeta donde descargaste el archivo y ejecuta:
    ```bash
-   sudo dpkg -i betograf-almacenero_2.3.9_amd64.deb
+   sudo dpkg -i betograf-almacenero_2.9.3_amd64.deb
    ```
 3. Si el instalador te solicita dependencias no instaladas, arréglalo automáticamente con:
    ```bash
