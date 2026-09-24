@@ -18,6 +18,9 @@
     </a>
     <img src="https://img.shields.io/badge/Tecnolog%C3%ADa-Django_&_Waitress-1f8b4c?style=for-the-badge&logo=django" alt="Django Stack" />
     <img src="https://img.shields.io/badge/Cifrado-SQLCipher_AES--256-4f46e5?style=for-the-badge&logo=sqlite" alt="SQLCipher AES-256" />
+    <a href="./COMPARATIVA_RENDIMIENTO.md">
+      <img src="https://img.shields.io/badge/Instalador-54.3_MB_Ultra--Ligero-0284c7?style=for-the-badge&logo=speedtest&logoColor=white" alt="Instalador 54.3 MB" />
+    </a>
   </p>
 
   <p>
@@ -26,7 +29,8 @@
   </p>
 
   <p>
-    👉 <b><a href="./CERTIFICACION_Y_CALIDAD.md">Lee aquí el Dictamen de Certificación Comercial, Rendimiento y Seguridad v2.3.9.2</a></b>
+    👉 <b><a href="./CERTIFICACION_Y_CALIDAD.md">Lee aquí el Dictamen de Certificación Comercial, Rendimiento y Seguridad v2.3.9.2</a></b><br />
+    ⚡ <b><a href="./COMPARATIVA_RENDIMIENTO.md">¿Por qué BetoGraf pesa ~54 MB mientras otros sistemas pesan más de 1 GB? Lee la comparativa técnica aquí</a></b>
   </p>
 </div>
 
@@ -93,13 +97,31 @@ BetoGraf Almacenero cuenta con un esquema de licenciamiento escalable según tus
 El núcleo del sistema ha sido rediseñado y blindado en la versión **2.3.9.2** para asegurar una estabilidad del 99.9% frente a cortes eléctricos o de red e integrar soluciones de grado industrial:
 
 *   **Arquitectura de Backend**: Django 5.x integrado con **Waitress WSGI**, garantizando una API local robusta, de alta concurrencia y sin fugas de memoria.
-*   **Blindaje Binario C (Cython)**: 24 módulos centrales compilados en extensiones C nativas (`.pyd`) mediante MSVC, protegiendo la lógica de negocio contra descompilación o ingeniería inversa.
+*   **Blindaje Binario C (Cython)**: 26 módulos centrales compilados en extensiones C nativas (`.pyd`) mediante MSVC, protegiendo la lógica de negocio contra descompilación o ingeniería inversa.
 *   **Criptografía y Autenticación NIST SP 800-63B**: Hashing de contraseñas reforzado con PBKDF2-SHA256 a **100.000 iteraciones** y limitador de tasa contra ataques de fuerza bruta en login.
 *   **Seguridad de Datos**: Base de datos SQLite cifrada nativamente con **SQLCipher** (cifrado AES-256). Tus ventas, costos y clientes están blindados ante accesos físicos no autorizados.
 *   **Carga 100% Offline (Local-First)**: Toda la interfaz gráfica, plantillas e interactividad (Tailwind CSS, Alpine.js y HTMX) se encuentran integrados localmente en los assets. **Funciona a la perfección sin conexión a internet**.
 *   **Gestión de Inventario FIFO**: Trazabilidad contable en tiempo real bajo la regla First-In, First-Out, calculando de forma exacta la utilidad neta de tu negocio.
 *   **Omnicanalidad y E-Commerce**: Integración con Shopify, WooCommerce y gestión centralizada de mensajes y pedidos (Instagram/WhatsApp) directo desde el POS.
 *   **Despachos B2B y Facturación**: Emisión de Guías de Despacho profesionales y facturación electrónica nativa conectada a los servicios del SII (Ley N° 20.956 y formato DTE).
+
+---
+
+## ⚡ Rendimiento & Arquitectura: ¿Por qué BetoGraf pesa ~54 MB mientras otros sistemas pesan más de 1 GB?
+
+A diferencia de la mayoría de las aplicaciones comerciales del mercado que sufren de **"software inflado" (bloatware)** al empaquetar navegadores enteros y servidores redundantes, BetoGraf Almacenero fue concebido bajo ingeniería de alto rendimiento y arquitectura **Local-First C-Hardened**:
+
+| Parámetro Técnico / Operativo | Software POS Convencional<br>*(Basado en Electron / Postgres)* | BetoGraf Almacenero POS<br>*(Arquitectura C-Hardened Local-First)* | Ventaja Competitiva BetoGraf |
+| :--- | :---: | :---: | :---: |
+| **Tamaño del Instalador** | `500 MB – 1.2 GB` | **`54.3 MB`** | **90% a 95% más ligero** (descarga instantánea) |
+| **Espacio Requerido en Disco** | `1.5 GB – 3.0 GB` | **`~140 MB`** | Apto para discos SSD compactos de TPV |
+| **Consumo de Memoria RAM en Uso** | `800 MB – 1.8 GB` | **`~160 MB`** *(Servidor + Render)* | **Ahorro del 80% de memoria RAM** |
+| **Tiempo de Arranque (Cold Boot)** | `6 a 15 segundos` | **`1.2 a 2.0 segundos`** | Listo para atender inmediatamente al encender el PC |
+| **Latencia de Respuesta al Escanear** | `180 ms – 450 ms` (o lag por internet) | **`< 25 milisegundos`** (tiempo real local) | Atención sin colas en horas punta |
+| **Motor de Base de Datos** | Servidor externo pesado (Postgres/MySQL) | **SQLCipher C-Nativo** (AES-256 embebido) | Cero servicios parásitos en segundo plano |
+| **Capa Gráfica de Renderizado** | Chromium completo duplicado por app | **Host Nativo Compartido** (Chrome `--app`) | Cero duplicación de navegadores en memoria |
+
+> 📖 **Para conocer el análisis técnico a fondo de los 4 pilares de ingeniería (Efecto Electron, C-Hardening, SQLCipher y Aislamiento StoreEnv), consulta el [Informe Completo de Arquitectura y Rendimiento](./COMPARATIVA_RENDIMIENTO.md).**
 
 ---
 
