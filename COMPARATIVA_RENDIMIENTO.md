@@ -1,7 +1,7 @@
-# ⚡ Arquitectura y Rendimiento: ¿Por qué BetoGraf pesa ~54 MB mientras otros sistemas pesan más de 1 GB?
+# ⚡ Arquitectura y Rendimiento: ¿Por qué BetoGraf pesa ~47.4 MB mientras otros sistemas pesan más de 1 GB?
 
 ### Informe Técnico de Eficiencia, Consumo de Recursos e Ingeniería de Software
-**BetoGraf Almacenero POS — Versión 2.3.9.2 Comercial**  
+**BetoGraf Almacenero POS — Versión 2.3.9.10 rev.1.0 Oficial**  
 *Auditoría de Arquitectura de Sistemas y Optimización de Rendimiento*
 
 ---
@@ -10,7 +10,7 @@
 
 En el mercado actual de software de Punto de Venta (POS) y gestión comercial, es común encontrar instaladores que exigen descargas de **500 MB, 800 MB e incluso más de 1.2 GB**, requiriendo computadores con procesadores potentes y 8 GB a 16 GB de memoria RAM simplemente para registrar una venta o emitir un ticket.
 
-En contraste, el instalador oficial de **BetoGraf Almacenero POS v2.3.9.2** pesa únicamente **54.3 MB**, se instala en menos de 10 segundos, ocupa apenas **~140 MB** en disco y opera con una agilidad instantánea en equipos comerciales estándar.
+En contraste, el instalador oficial de **BetoGraf Almacenero POS v2.3.9.10 rev.1.0** pesa únicamente **47.4 MB**, se instala en menos de 10 segundos, ocupa apenas **~120 MB** en disco y opera con una agilidad instantánea en equipos comerciales estándar.
 
 > **¿Cómo es posible una reducción de más del 90% en tamaño sin sacrificar potencia, seguridad ni diseño moderno?**  
 > La respuesta radica en la **ingeniería de software de precisión**: eliminar el software redundante desde el diseño de la arquitectura.
@@ -21,9 +21,9 @@ En contraste, el instalador oficial de **BetoGraf Almacenero POS v2.3.9.2** pesa
 
 | Parámetro Técnico / Operativo | Aplicación POS Convencional<br>*(Basada en Electron / Servidores Pesados)* | BetoGraf Almacenero POS<br>*(Arquitectura C-Hardened Local-First)* | Ventaja Competitiva BetoGraf |
 | :--- | :---: | :---: | :---: |
-| **Tamaño del Instalador** | `500 MB – 1.2 GB` | **`54.3 MB`** | **90% a 95% más ligero** (descarga instantánea) |
-| **Espacio Requerido en Disco** | `1.5 GB – 3.0 GB` | **`~140 MB`** | Apto para discos SSD compactos de TPV |
-| **Consumo de Memoria RAM en Uso** | `800 MB – 1.8 GB` | **`~160 MB`** *(Servidor + Render)* | **Ahorro del 80% de RAM** |
+| **Tamaño del Instalador** | `500 MB – 1.2 GB` | **`~47.4 MB`** | **90% a 95% más ligero** (descarga instantánea) |
+| **Espacio Requerido en Disco** | `1.5 GB – 3.0 GB` | **`~120 MB`** | Apto para discos SSD compactos de TPV |
+| **Consumo de Memoria RAM en Uso** | `800 MB – 1.8 GB` | **`~150 MB`** *(Servidor + Render)* | **Ahorro del 80% de RAM** |
 | **Tiempo de Arranque en Frío (Cold Boot)** | `6 a 15 segundos` | **`1.2 a 2.0 segundos`** | Listo para atender inmediatamente al encender el PC |
 | **Latencia de Respuesta al Escanear** | `180 ms – 450 ms` (o dependiente de internet) | **`< 25 milisegundos`** (tiempo real local) | Atención continua y sin colas en horas punta |
 | **Motor de Base de Datos** | Servidor cliente-servidor externo (Postgres / MySQL / Mongo) | **SQLCipher C-Nativo** (AES-256 embebido) | Cero servicios parásitos en segundo plano |
@@ -42,9 +42,9 @@ En contraste, el instalador oficial de **BetoGraf Almacenero POS v2.3.9.2** pesa
 │                 Servidor BD Postgres/MySQL (~250 MB) + Librerías no usadas (~300 MB)  │
 │                 = TOTAL: 1.060 MB (1,06 GB)                                            │
 ├────────────────────────────────────────────────────────────────────────────────────────┤
-│  [BETOGRAF POS] Motor Host Compartido (0 MB extra) + Micro-WSGI C-Hardened (~35 MB) +  │
-│                 SQLCipher AES-256 en C (~3 MB) + Core Cython optimizado (~16 MB)       │
-│                 = TOTAL COMPRIMIDO: 54,3 MB                                            │
+│  [BETOGRAF POS] Motor Host Compartido (0 MB extra) + Micro-WSGI C-Hardened (~30 MB) +  │
+│                 SQLCipher AES-256 en C (~3 MB) + Core Cython optimizado (~14 MB)       │
+│                 = TOTAL COMPRIMIDO: 47,4 MB                                            │
 └────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -58,13 +58,13 @@ En contraste, el instalador oficial de **BetoGraf Almacenero POS v2.3.9.2** pesa
 
 ### 3. Aislamiento Quirúrgico de Dependencias (`StoreEnv`)
 - **El Enfoque Convencional:** El software empaquetado de forma descuidada suele incluir paquetes innecesarios acumulados durante el desarrollo (frameworks de pruebas automatizadas, librerías científicas, herramientas de depuración y dependencias huérfanas).
-- **La Solución BetoGraf:** El pipeline de producción está confinado al entorno estricto `StoreEnv`, el cual valida y compila **exclusivamente las 36 dependencias funcionales indispensables** para la operación comercial. No existe ni una sola línea de código parásito dentro del ejecutable.
+- **La Solución BetoGraf:** El pipeline de producción está confinado al entorno estricto `StoreEnv`, el cual valida y compila **exclusivamente las dependencias funcionales indispensables** para la operación comercial. No existe ni una sola línea de código parásito dentro del ejecutable.
 
 ### 4. Transpilación Cython a Código Máquina C y Compresión LZMA2
 - **El Enfoque Convencional:** Distribución de scripts en texto plano o bytecode compilado genérico sin optimizaciones de bajo nivel del procesador.
 - **La Solución BetoGraf:** 
-  1. **Compilación C Nativa:** 26 módulos neurálgicos del sistema (licenciamiento, base de datos, inventario FIFO, pasarelas de pago y servicios contables) son convertidos a C puro mediante **Cython** y compilados con el optimizador de Microsoft Visual C++ (`cl.exe /O2`), maximizando velocidad de ejecución y reduciendo el footprint en disco.
-  2. **Empaquetado Inno Setup con LZMA2 Ultra:** Los archivos binarios del sistema pasan por un algoritmo de compresión de densidad industrial que reduce el peso del instalador a tan solo **54.3 MB**, permitiendo descargarlo incluso en conexiones móviles 4G en menos de 15 segundos.
+  1. **Compilación C Nativa:** Más de 25 módulos neurálgicos del sistema (licenciamiento, base de datos, inventario FIFO, pasarelas de pago, servicios contables, webhooks y telemetría) son convertidos a C puro mediante **Cython** y compilados con el optimizador de Microsoft Visual C++ (`cl.exe /O2`), maximizando velocidad de ejecución y reduciendo el footprint en disco.
+  2. **Empaquetado Inno Setup con LZMA2 Ultra:** Los archivos binarios del sistema pasan por un algoritmo de compresión de densidad industrial que reduce el peso del instalador a tan solo **47.4 MB**, permitiendo descargarlo incluso en conexiones móviles 4G en menos de 10 segundos.
 
 ---
 
