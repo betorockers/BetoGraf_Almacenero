@@ -177,7 +177,6 @@ Accede a la documentación técnica y guías paso a paso de BetoGraf POS, dispon
 | **🔌 Conexión de Webhooks (E-Commerce)** | [Ver HTML](./manuales/Manual_Integracion_Ecommerce.html) | [Leer en GitHub](./docs/Manual_Integracion_Ecommerce.md) | Integración con WooCommerce, Shopify y tiendas web externas con sincronización de stock. |
 | **💳 Equipos POS y Pasarelas de Pago** | [Ver HTML](./manuales/Manual_Equipos_POS.html) | [Leer en GitHub](./docs/Manual_Equipos_POS.md) | Conexión e integración con Mercado Pago Smart Point, Transbank, SumUp y Flow. |
 | **🏷️ Guía de Precios, Costos e Impuestos** | — | [Leer en GitHub](./docs/guia_ingreso_precios.md) | Fórmulas tributarias, IVA (19%), precios netos, brutos y margen de ganancia. |
-| **☁️ Telemetría y Salud en Supabase** | — | [Leer en GitHub](./docs/telemetria_supabase.md) | Monitoreo en segundo plano, diagnósticos y reportes de estado del terminal. |
 
 ---
 
