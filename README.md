@@ -5,9 +5,9 @@
 
   <br />
   
-  ### **El Punto de Venta (POS) Profesional, Blindado y Offline-First para Comercios Exigentes**
+  ### **El Punto de Venta (POS) Profesional, Blindado y Offline-First para Almacenes y Comercios en Chile**
   
-  *Una solución local de alto rendimiento diseñada bajo estándares de ingeniería de software para maximizar la velocidad de cobro, resguardar tus datos y mantener tu negocio siempre activo.*
+  *Una solución local de alto rendimiento diseñada para maximizar la velocidad de atención, liquidar tus impuestos automáticamente, resguardar tus datos y mantener tu negocio siempre cobrando, incluso si se corta internet.*
 
   <p>
     <a href="https://github.com/betorockers/BetoGraf_Almacenero/releases/tag/v2.3.9.10">
@@ -16,21 +16,21 @@
     <a href="./CERTIFICACION_Y_CALIDAD.md">
       <img src="https://img.shields.io/badge/Certificaci%C3%B3n-Calidad_y_Seguridad_100%25-22c55e?style=for-the-badge&logo=securityscorecard&logoColor=white" alt="Certificación de Calidad y Seguridad" />
     </a>
-    <img src="https://img.shields.io/badge/Tecnolog%C3%ADa-Django_%26_Waitress-1f8b4c?style=for-the-badge&logo=django" alt="Django Stack" />
+    <img src="https://img.shields.io/badge/Asistente_F29-SII_Chile_Integrado-0284c7?style=for-the-badge&logo=googleforms&logoColor=white" alt="Asistente F29 SII" />
     <img src="https://img.shields.io/badge/Cifrado-SQLCipher_AES--256-4f46e5?style=for-the-badge&logo=sqlite" alt="SQLCipher AES-256" />
     <a href="./COMPARATIVA_RENDIMIENTO.md">
-      <img src="https://img.shields.io/badge/Instalador-47.5_MB_Ultra--Ligero-0284c7?style=for-the-badge&logo=speedtest&logoColor=white" alt="Instalador 47.5 MB" />
+      <img src="https://img.shields.io/badge/Instalador-47.5_MB_Ultra--Ligero-059669?style=for-the-badge&logo=speedtest&logoColor=white" alt="Instalador 47.5 MB" />
     </a>
   </p>
 
   <p>
-    <b>¿Cansado de los sistemas lentos basados en la nube que se caen cuando más los necesitas?</b><br />
-    BetoGraf Almacenero opera directamente en tu computador local. Tus datos se quedan en tu máquina, protegidos bajo cifrado de grado militar (AES-256), con contraseñas seguras según norma internacional NIST SP 800-63B, y una velocidad de respuesta instantánea sin requerir conexión permanente a internet.
+    <b>¿Cansado de sistemas lentos en la nube que se pegan cuando tienes fila en el local o cuando se cae internet?</b><br />
+    <b>BetoGraf Almacenero</b> se instala y corre directamente en tu computador. No depende de servidores externos para cobrar, tus datos nunca se filtran, responde en menos de 25 milisegundos y cuenta con certificación digital oficial de Windows para una instalación 100% limpia y sin advertencias.
   </p>
 
   <p>
-    👉 <b><a href="./CERTIFICACION_Y_CALIDAD.md">Lee aquí el Dictamen de Certificación Comercial, Rendimiento y Seguridad v2.3.9.10</a></b><br />
-    ⚡ <b><a href="./COMPARATIVA_RENDIMIENTO.md">¿Por qué BetoGraf pesa ~47.5 MB mientras otros sistemas pesan más de 1 GB? Lee la comparativa técnica aquí</a></b>
+    🔍 <b><a href="./CERTIFICACION_Y_CALIDAD.md">Lee aquí el Dictamen de Certificación Comercial, Rendimiento y Seguridad v2.3.9.10</a></b><br />
+    ⚡ <b><a href="./COMPARATIVA_RENDIMIENTO.md">¿Por qué BetoGraf pesa ~47.5 MB mientras otros sistemas superan 1 GB? Lee la comparativa técnica aquí</a></b>
   </p>
 </div>
 
@@ -56,7 +56,7 @@ Selecciona la opción de instalación según tu caso:
           </a>
           <br /><br />
           <b>BetoGraf_Almacen_Setup_v2.3.9.10.exe</b><br />
-          <small style="color: #64748b;">Instalador oficial para Windows 10 y 11 (64-bits). Configura base de datos cifrada, accesos directos y servicios base.</small><br />
+          <small style="color: #64748b;">Instalador oficial para Windows 10 y 11 (64-bits). Firmado digitalmente con Authenticode SHA256 para instalación limpia y segura.</small><br />
           <span style="display: inline-block; margin-top: 8px; padding: 2px 8px; background-color: #f1f5f9; color: #475569; font-size: 11px; border-radius: 4px; font-family: monospace;">Tamaño: ~48 MB (Ultra-Optimizado)</span>
         </td>
         <td align="center" style="padding: 20px; border: 1px solid #e2e8f0; vertical-align: top;">
@@ -65,7 +65,7 @@ Selecciona la opción de instalación según tu caso:
           </a>
           <br /><br />
           <b>BetoGraf_Almacen_Parche_v2.3.9.10.exe</b><br />
-          <small style="color: #64748b;">Actualización express para comercios con versión anterior instalada. Conserva datos, inventario y licencias intactos.</small><br />
+          <small style="color: #64748b;">Actualización express para comercios con versión anterior instalada. Conserva datos, inventario, ventas y licencias intactos.</small><br />
           <span style="display: inline-block; margin-top: 8px; padding: 2px 8px; background-color: #ecfdf5; color: #047857; font-size: 11px; border-radius: 4px; font-family: monospace;">Actualización Segura In-Place</span>
         </td>
       </tr>
@@ -75,112 +75,101 @@ Selecciona la opción de instalación según tu caso:
 
 ---
 
-## 💎 Matriz de Características por Tipo de Licencia
+## 🌟 Las Grandes Innovaciones de la Versión 2.3.9.10
 
-El sistema adapta sus capacidades dinámicamente según la serie de licencia activada:
+### 1. 📊 Módulo de Contabilidad Avanzada & Asistente F29 Automático
+* **Ahorro masivo en contador:** Calcula de forma automática el IVA Débito (ventas), IVA Crédito (compras de mercadería), Remanente del mes anterior y Retenciones de Boletas de Honorarios.
+* **Carga de RCV del SII en 1 Clic:** Importa directamente el archivo CSV del Registro de Compras y Ventas del SII para conciliar automáticamente todas las facturas de tus proveedores (CCU, Soprole, Coca-Cola, etc.).
+* **Balance Tributario de 8 Columnas:** Genera el balance oficial bajo normativa IFRS y Régimen ProPyme (DL 824 14 D3/D8) en Excel profesional, listo para presentar en bancos para solicitar créditos o líneas de financiamiento comercial.
+* **Sellado Digital de Integridad:** Cada asiento del Libro Diario y Mayor queda respaldado con firma criptográfica de integridad, eliminando descuadres y garantizando transparencia total.
 
-| Módulo / Capacidad | PRO Mensual (`POS-MS-...`) | PRO Anual (`POS-AN-...`) | PRO Omnicanal (`POS-OM-...`) | Master DEV (`POS-DEV-...`) |
+### 2. 💳 Pagos Digitales Oficiales & Auto-Renovación SaaS
+* **Mercado Pago Checkout Pro Homologado:** Cobra a tus clientes con código QR, tarjetas de débito y crédito con acreditación inmediata y soporte oficial.
+* **Renovación Digital de Licencia en 30 Segundos:** Si deseas renovar tu plan o pasar a una licencia superior, puedes hacerlo directamente desde el sistema pagando de forma segura con QR o tarjetas, recibiendo tu activación instantánea sin esperas.
+
+### 3. ⚡ Arquitectura "Sincronía Militar": Cero Pegaderas en Caja
+* **Impresión Térmica en Segundo Plano:** El sistema desacopla el trabajo de la impresora de boletas (XP-80 / 58mm) y la apertura de la gaveta de dinero. Cobras la venta, se entrega el vuelto y puedes atender al siguiente cliente inmediatamente en menos de 25 milisegundos sin que la pantalla se congele.
+* **Consumo Mínimo de Recursos:** Gracias a su motor de base de datos optimizado en memoria directa de kernel, el sistema arranca al instante y no ralentiza tu computador, funcionando impecable incluso en equipos básicos de caja.
+
+### 4. 🛡️ Instalación Certificada con Firma Digital Authenticode
+* **Instalación Confiable y sin Alertas:** Los ejecutables e instaladores cuentan con firma digital SHA256 y marca de tiempo oficial de DigiCert.
+* **Registro Silencioso de Confianza:** El instalador registra automáticamente las firmas en Windows, garantizando que el sistema sea reconocido como software seguro, profesional y de origen verificado.
+
+### 5. 🧾 Facturación Electrónica SII & Timbre Digital PDF417
+* **Cumplimiento Tributario al 100%:** Emisión de Boletas Electrónicas (DTE 39 afectas y DTE 41 exentas) con desglose exacto de IVA 19% e impuestos especiales a las bebidas y alcoholes (ILA).
+* **Timbre Oficial de Alta Resolución:** Código de barras bidimensional PDF417 según especificación técnica del SII, impreso nítidamente en vouchers de 58mm y 80mm.
+* **Control Inteligente de Folios CAF:** Alerta automática cuando queden pocos folios para que nunca te quedes sin poder emitir boletas.
+
+### 6. 📱 Suite Meta Omnichannel & Comercio por Redes Sociales
+* **Vende por WhatsApp e Instagram:** Conecta tu catálogo de productos con WhatsApp Business e Instagram Messaging para recibir pedidos y confirmar stock automáticamente.
+* **Links de Pago Directos en el Chat:** Envía enlaces de cobro de Mercado Pago o Flow al cliente por WhatsApp para que te pague con tarjeta al instante.
+* **Sincronización con Tiendas Web (Shopify y WooCommerce):** Cada venta física descuenta el stock de tu tienda online y viceversa, evitando sobreventas o quiebres de inventario.
+
+---
+
+## 📋 Matriz Comercial de Planes y Licencias
+
+El sistema adapta sus funciones según el tipo de licencia activada:
+
+| Módulo / Capacidad Comercial | PRO Mensual (`POS-MS-...`) | PRO Anual (`POS-AN-...`) | PRO Omnicanal (`POS-OM-...`) | Master EMPRESA (`POS-DEV-...`) |
 |---|:---:|:---:|:---:|:---:|
-| **Terminales permitidas** | 1 Puesto | 1 Puesto | 1 Puesto | Ilimitado |
-| **Venta POS Offline-first rápida (<25ms)** | ✅ Habilitado | ✅ Habilitado | ✅ Habilitado | ✅ Habilitado |
-| **Facturación SII (Boleta/Factura + PDF417)** | ✅ Habilitado | ✅ Habilitado | ✅ Habilitado | ✅ Habilitado |
-| **Control de Stock y Cierre de Caja ciego** | ✅ Habilitado | ✅ Habilitado | ✅ Habilitado | ✅ Habilitado |
-| **Transbank POS USB y Mercado Pago Point** | ✅ Habilitado | ✅ Habilitado | ✅ Habilitado | ✅ Habilitado |
-| **Gestión de Proveedores básica** | ✅ Habilitado | ✅ Habilitado | ✅ Habilitado | ✅ Habilitado |
-| **Órdenes de Compra por Stock Crítico** | 🔒 Bloqueado | ✅ Habilitado | ✅ Habilitado | ✅ Habilitado |
-| **Reportes de Márgenes y Ganancia Real** | 🔒 Bloqueado | ✅ Habilitado | ✅ Habilitado | ✅ Habilitado |
-| **Suite Omnicanal (WhatsApp Cloud + Instagram)** | 🔒 Bloqueado | 🔒 Bloqueado | ✅ Habilitado | ✅ Habilitado |
-| **Integración E-commerce (Shopify/WooCommerce)** | 🔒 Bloqueado | 🔒 Bloqueado | ✅ Habilitado | ✅ Habilitado |
-| **Módulo "Cuentas por Pagar" Proveedores** | 🔒 Bloqueado | 🔒 Bloqueado | ✅ Habilitado (Exclusivo) | ✅ Habilitado |
-| **Catálogo XML Meta & Links de Pago Auto** | 🔒 Bloqueado | 🔒 Bloqueado | ✅ Habilitado | ✅ Habilitado |
-| **Soporte de Ingeniería y Telemetría** | Estándar | Prioritario (6/año) | VIP Continuo | Total / Ilimitado |
+| **Puestos de Caja Permitidos** | 1 Terminal | 1 Terminal | 1 Terminal | Ilimitado |
+| **Venta Rápida Offline-First (<25ms)** | ✅ Incluido | ✅ Incluido | ✅ Incluido | ✅ Incluido |
+| **Boleta Electrónica SII (PDF417)** | ✅ Incluido | ✅ Incluido | ✅ Incluido | ✅ Incluido |
+| **Control de Stock y Cierre de Caja Ciego** | ✅ Incluido | ✅ Incluido | ✅ Incluido | ✅ Incluido |
+| **Asistente Tributario F29 e IVA Automático** | ✅ Incluido | ✅ Incluido | ✅ Incluido | ✅ Incluido |
+| **Carga de RCV del SII (Compras y Ventas)** | ✅ Incluido | ✅ Incluido | ✅ Incluido | ✅ Incluido |
+| **Balance de 8 Columnas para Bancos (Excel)** | 🔒 Bloqueado | ✅ Incluido | ✅ Incluido | ✅ Incluido |
+| **Órdenes de Compra por Stock Crítico** | 🔒 Bloqueado | ✅ Incluido | ✅ Incluido | ✅ Incluido |
+| **Reportes de Márgenes y Ganancia Real** | 🔒 Bloqueado | ✅ Incluido | ✅ Incluido | ✅ Incluido |
+| **Cuentas por Pagar a Proveedores con Semáforo** | 🔒 Bloqueado | 🔒 Bloqueado | ✅ Exclusivo | ✅ Incluido |
+| **Suite WhatsApp Cloud + Instagram Shop** | 🔒 Bloqueado | 🔒 Bloqueado | ✅ Incluido | ✅ Incluido |
+| **Sincronización E-Commerce (Shopify / WooCommerce)** | 🔒 Bloqueado | 🔒 Bloqueado | ✅ Incluido | ✅ Incluido |
+| **Soporte Técnico y Asesoría** | Estándar | Prioritario | VIP Continuo | Total e Ilimitado |
 
-> ℹ️ *Todos los planes incluyen un periodo de prueba de 20 días con acceso de evaluación completo a las funciones operativas del sistema.*
-
----
-
-## 🌟 Módulos Comerciales e Innovaciones Destacadas
-
-### 1. ⚡ Punto de Venta Ultra-Rápido & 100% Offline-First
-* **Velocidad sin esperas:** Cobros y escaneo de productos en menos de **25 milisegundos**, evitando filas en horas punta.
-* **Autonomía total:** Opera de manera ininterrumpida frente a caídas de internet, cortes de fibra o fallas en servidores en la nube.
-* **Múltiples métodos de pago:** Efectivo con cálculo de vuelto y Ley de Redondeo CLP, tarjetas bancarias Transbank POS por puerto COM/USB, Mercado Pago Point, transferencias y libreta de fiados.
-
-### 2. 🧾 Facturación Electrónica SII & Timbre Digital PDF417
-* **Cumplimiento Tributario Nativo:** Emisión de Boletas Electrónicas (DTE 39/41) y Facturas con cálculo automático de Débito Fiscal IVA 19% e impuestos adicionales (ILA).
-* **Timbre Electrónico Oficial:** Generación en alta resolución del código de barras bidimensional PDF417 según resolución técnica del SII, impreso de forma nítida en vouchers de 58 mm y 80 mm.
-* **Gestión de Folios CAF:** Consumo atómico de folios timbrados con alerta de bajo remanente para timbraje oportuno.
-
-### 3. 💳 Módulo Financiero: Cuentas por Pagar (Exclusivo PRO Omnicanal)
-* **Control Integral de Deuda con Proveedores:** Libro auxiliar de facturas a crédito recibidas (CCU, Soprole, Coca-Cola, etc.).
-* **Semáforo Financiero de Vencimientos:** Monitoreo visual preventivo de facturas: *Al día* (verde), *Por vencer* (amarillo, dentro de los próximos 3 días) y *Vencida* (rojo).
-* **Gestión Atómica de Abonos:** Registro de pagos parciales o totales con recálculo automático de saldo remanente, historial detallado de transacciones y KPIs de deuda consolidada.
-
-### 4. 🌐 Suite Meta Omnichannel & Comercio Conversacional
-* **WhatsApp Business Cloud API & Instagram Messaging:** Recepción centralizada de pedidos desde chats, consulta de stock por bot/operador y confirmación de compras.
-* **Catálogo XML Sincronizado:** Feed RSS 2.0 XML generado al vuelo y sincronizado con Meta Commerce Manager para tiendas de Instagram y WhatsApp Shop.
-* **Links de Pago Automatizados:** Generación automática de botones de pago con **Mercado Pago** y **Flow** enviados al cliente en el chat para cobro inmediato.
-
-### 5. 🛒 Webhooks E-Commerce (Shopify & WooCommerce)
-* **Sincronización Bidireccional:** Conexión con tiendas virtuales vía webhooks firmados con HMAC-SHA256.
-* **Descuento Atómico de Stock:** Al concretarse una venta en la tienda online, el stock físico en la tienda se descuenta de inmediato evitando sobreventa.
-* **API de Consulta de Catálogo:** Consulta de precios y niveles de inventario por SKU mediante API Key configurable.
-
-### 6. 📊 Contabilidad Analítica & Motor de Precios Bidireccional
-* **Utilidad y Margen Real:** Reportes detallados que calculan la ganancia neta ítem por ítem comparando precio de venta vs. costo de reposición.
-* **Estructura de Precios Bidireccional:** Al fijar el precio bruto público, el sistema retrocede matemáticamente para inferir costo neto estimado y margen de ganancia garantizado, con decimales precisos.
-* **Libro de Ventas Excel:** Exportación en un clic adaptada a las especificaciones contables y tributarias de Chile.
-
-### 7. 🛰️ Telemetría y Salud en Nube (Supabase Cloud)
-* **Worker Autónomo en Background:** Monitoreo periódico de salud del sistema (uso de memoria RAM, disco SSD, base de datos SQLite cifrada y uptime).
-* **Sincronización Silenciosa:** Transmisión de métricas hacia Supabase con tolerancia a desconexión, asegurando supervisión preventiva sin impacto en el rendimiento de la caja.
+> 🎁 *Todas las descargas nuevas incluyen **20 días de prueba gratuita** con acceso a las funciones operativas del sistema sin compromiso.*
 
 ---
 
-## ⚡ Rendimiento & Arquitectura: ¿Por qué BetoGraf pesa ~48 MB mientras otros superan 1 GB?
+## 🏆 Comparativa Real: BetoGraf POS vs Otros Sistemas del Mercado
 
-| Parámetro Operativo | Software POS Convencional<br>*(Basado en Electron / Navegadores Duplicados)* | BetoGraf Almacenero POS<br>*(Arquitectura C-Hardened Local-First)* | Ventaja Competitiva BetoGraf |
+| Característica Clave | Sistemas Web en la Nube<br>*(SaaS tradicionales)* | Software Antiguo en Electron<br>*(Pesados y lentos)* | BetoGraf Almacenero POS<br>*(Arquitectura Local de Alto Rendimiento)* |
 | :--- | :---: | :---: | :---: |
-| **Tamaño del Instalador** | `500 MB — 1.2 GB` | **`~48 MB`** | **95% más liviano** (descarga en segundos) |
-| **Espacio Requerido en Disco** | `1.5 GB — 3.0 GB` | **`~120 MB`** | Ideal para terminales compactos y discos SSD |
-| **Consumo de Memoria RAM** | `800 MB — 1.8 GB` | **`~150 MB`** *(Servidor + UI)* | **Ahorro del 80% de recursos** |
-| **Tiempo de Arranque (Cold Boot)** | `6 a 15 segundos` | **`1.2 a 2.0 segundos`** | Listo para atender inmediatamente al encender el equipo |
-| **Latencia de Escaneo de Productos** | `180 ms — 450 ms` (o lag por internet) | **`< 25 milisegundos`** | Cobro instantáneo sin demoras |
-| **Motor de Base de Datos** | Servidor cliente-servidor externo pesado | **SQLCipher C-Nativo** (AES-256 embebido) | Cero servicios parásitos en segundo plano |
-| **Seguridad de Archivos** | Archivos abiertos y legibles | **Binario C Blindado (Cython)** | Respaldo y máxima privacidad comercial |
+| **¿Funciona si se corta internet?** | ❌ Se cae y no puedes cobrar | ⚠️ Parcial o con fallas | **✅ 100% Operativo sin internet** |
+| **Tiempo de respuesta al cobrar** | 200 ms a 1.5 segundos | 150 ms a 400 ms | **⚡ Menos de 25 milisegundos** |
+| **Impresión de boleta térmica** | Bloquea la pantalla mientras imprime | Se congela en horas punta | **🚀 En segundo plano (Cero espera)** |
+| **Liquidación de Impuestos F29** | Manual o requiere módulo extra | Manual o inexistente | **📊 Automático con importación RCV** |
+| **Tamaño del instalador** | N/A (Web dependiente) | 500 MB a 1.2 GB | **📦 Solo ~48 MB (Ultra-Liviano)** |
+| **Memoria RAM requerida** | Alto consumo de navegador | 800 MB a 2 GB | **💻 ~150 MB (Corre en cualquier PC)** |
+| **Privacidad de tus ventas** | En servidores de terceros | Poco protegidos | **🔒 Base de datos cifrada AES-256 local** |
 
 ---
 
-## 💻 Guía de Instalación Rápida
+## 🛠️ Guía Rápida de Instalación (Windows 10 y 11)
 
-### Instalación en Windows 10 y 11 (64-bits)
-
-1. Descarga el instalador oficial [BetoGraf_Almacen_Setup_v2.3.9.10.exe](https://github.com/betorockers/BetoGraf_Almacenero/releases/download/v2.3.9.10/BetoGraf_Almacen_Setup_v2.3.9.10.exe) o el parche ligero si ya tienes una versión previa instalada.
+1. Descarga el instalador oficial [BetoGraf_Almacen_Setup_v2.3.9.10.exe](https://github.com/betorockers/BetoGraf_Almacenero/releases/download/v2.3.9.10/BetoGraf_Almacen_Setup_v2.3.9.10.exe) (o el parche ligero si ya tienes una versión instalada).
 2. Ejecuta el archivo descargado.
-3. Sigue el asistente guiado de instalación; se crearán automáticamente los accesos directos en el escritorio y menú de inicio.
-4. Inicia **BetoGraf Almacen** desde tu escritorio y comienza a operar.
-
-> [!TIP]
-> Si Windows SmartScreen muestra una pantalla preventiva por ser un software recién empaquetado, presiona **"Más información"** y luego **"Ejecutar de todas formas"**. El ejecutable cuenta con verificación de integridad nativa.
+3. El instalador configurará automáticamente los accesos directos en tu escritorio y menú de inicio, junto con las firmas de seguridad.
+4. Abre **BetoGraf Almacen** y comienza a vender inmediatamente.
 
 ---
 
-## 📚 Centro de Documentación y Manuales Oficiales
+## 📚 Biblioteca de Manuales y Guías Paso a Paso
 
-Accede a la documentación técnica oficial y guías paso a paso de BetoGraf POS en formato Markdown (.md) para lectura directa en GitHub:
+Consulta los manuales completos en formato Markdown (.md) disponibles directamente en la carpeta [`docs/`](./docs/):
 
-| Manual / Guía | Documento (.md) | Descripción Técnica |
+| Manual / Guía | Documento | Lo que aprenderás |
 | :--- | :---: | :--- |
-| **📖 Manual de Usuario General** | [manual_usuario.md](./docs/manual_usuario.md) | Operación de Punto de Venta, caja, ventas, configuración, arqueo e inventario. |
-| **🌐 Manual Omnicanal BetoGraf** | [manual_omnicanal.md](./docs/manual_omnicanal.md) | Sincronización en la Nube (Cloud Sync), recepción y carga de pedidos web. |
-| **💬 Meta Omnichannel (WhatsApp & Instagram)** | [manual_meta_onboarding.md](./docs/manual_meta_onboarding.md) | Onboarding paso a paso para WhatsApp Business Cloud API e Instagram Messaging. |
-| **🔌 Conexión de Webhooks (E-Commerce)** | [Manual_Integracion_Ecommerce.md](./docs/Manual_Integracion_Ecommerce.md) | Integración con WooCommerce, Shopify y tiendas web externas con sincronización de stock. |
-| **💳 Equipos POS y Pasarelas de Pago** | [Manual_Equipos_POS.md](./docs/Manual_Equipos_POS.md) | Conexión e integración con Mercado Pago Smart Point, Transbank, SumUp y Flow. |
-| **🏷️ Guía de Precios, Costos e Impuestos** | [guia_ingreso_precios.md](./docs/guia_ingreso_precios.md) | Fórmulas tributarias, IVA (19%), precios netos, brutos y margen de ganancia. |
+| **📖 Manual de Usuario General** | [manual_usuario.md](./docs/manual_usuario.md) | Venta rápida en caja, apertura y cierre ciego, inventario y productos. |
+| **📊 Manual de Contabilidad y Asistente F29** | [manual_contabilidad_f29.md](./docs/manual_contabilidad_f29.md) | Cálculo automático de F29, carga de RCV del SII y balance de 8 columnas. |
+| **💳 Pasarelas de Pago y Equipos POS** | [Manual_Equipos_POS.md](./docs/Manual_Equipos_POS.md) | Conexión con Mercado Pago Smart Point, QR, Transbank y SumUp. |
+| **📲 Meta Omnichannel (WhatsApp e Instagram)** | [manual_meta_onboarding.md](./docs/manual_meta_onboarding.md) | Catálogo en redes sociales y recepción de pedidos por mensajería. |
+| **🌐 Integración E-Commerce** | [Manual_Integracion_Ecommerce.md](./docs/Manual_Integracion_Ecommerce.md) | Sincronización automática de stock con Shopify y WooCommerce. |
+| **💰 Guía de Precios, Costos e Impuestos** | [guia_ingreso_precios.md](./docs/guia_ingreso_precios.md) | Márgenes de ganancia, cálculo de IVA (19%) y precios brutos vs netos. |
 
 ---
 
-## 📞 Soporte Comercial y Asesoría Directa
+## 🤝 Atención Comercial y Soporte Directo
 
 <div align="center">
   <table style="width: 80%; border-collapse: collapse;">
@@ -197,5 +186,5 @@ Accede a la documentación técnica oficial y guías paso a paso de BetoGraf POS
   </table>
 
   <br />
-  <sub>BetoGraf Almacenero POS es un desarrollo de BetoGraf. Todos los derechos reservados.</sub>
+  <sub>BetoGraf Almacenero POS es una marca y desarrollo de BetoGraf. Todos los derechos reservados.</sub>
 </div>

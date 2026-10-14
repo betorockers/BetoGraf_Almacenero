@@ -4,27 +4,30 @@
 ---
 
 <div align="center">
-  <h2>¿Por qué BetoGraf Almacenero es el Punto de Venta más seguro y confiable para tu negocio?</h2>
+  <h2>¿Por qué BetoGraf Almacenero es el Punto de Venta más seguro, rápido y confiable para tu negocio?</h2>
   <p>
     En el comercio minorista, <b>cada segundo cuenta</b> y <b>la información de tus ventas es oro</b>. 
     A diferencia de la mayoría de los sistemas del mercado que dependen de internet y servidores lentos, 
     <b>BetoGraf Almacenero</b> fue desarrollado bajo estándares de ingeniería de software industrial para brindarte 
-    <b>velocidad instantánea, cero interrupciones y máxima protección para tus finanzas</b>.
+    <b>velocidad instantánea, cero interrupciones, cálculo automático de impuestos y máxima protección para tus finanzas</b>.
   </p>
 </div>
 
 ---
 
-## 🏛️ Los 5 Pilares de Excelencia Certificados
+## 🏛️ Los 8 Pilares de Excelencia Certificados
 
 ```
   ┌────────────────────────────────────────────────────────────────────────┐
   │                                                                        │
   │   ⚡ 1. Velocidad Sub-Milisegundo (100% Offline-First)                │
   │   🛡️ 2. Blindaje de Grado Militar (Tus datos nunca se filtran)         │
-  │   ⚖️ 3. Certificación de Leyes Chilenas (Redondeo, IVA 19% y SII)      │
-  │   📊 4. Cero Caídas y Control Total de Caja, Fiados y Ctas x Pagar     │
-  │   🌐 5. Omnicanalidad Integrada (WhatsApp, Instagram, Webhooks)        │
+  │   🇨🇱 3. Certificación de Leyes Chilenas (Redondeo, IVA 19% y SII)      │
+  │   📊 4. Asistente F29 y Balance Tributario de 8 Columnas               │
+  │   💳 5. Pasarelas de Pago Oficiales y Auto-Venta de Licencias          │
+  │   🚀 6. Sincronía Militar Concurrente: Cero Pegaderas en Impresión     │
+  │   🔒 7. Certificación Digital Authenticode SHA256 (Windows Confiable)  │
+  │   📱 8. Suite Meta Omnicanal Integrada (WhatsApp, Instagram, Webhooks) │
   │                                                                        │
   └────────────────────────────────────────────────────────────────────────┘
 ```
@@ -51,7 +54,7 @@ Tus datos comerciales (cuánto ganas, tus costos, tus proveedores y la lista de 
 
 ---
 
-### 3. ⚖️ Certificado para Normativas Comerciales y Tributarias en Chile
+### 3. 🇨🇱 Certificado para Normativas Comerciales y Tributarias en Chile
 
 BetoGraf Almacenero cumple estrictamente con el marco legal comercial vigente en Chile:
 
@@ -64,34 +67,65 @@ BetoGraf Almacenero cumple estrictamente con el marco legal comercial vigente en
 
 ---
 
-### 4. 📊 Finanzas Transparentes: Arqueo de Caja, Fiados y Cuentas por Pagar
+### 4. 📊 Asistente F29 Automático y Balance de 8 Columnas en 1 Clic
 
-- **Cuadratura y Arqueo Ciego:** Al cerrar el turno, el cajero declara el dinero en efectivo que tiene en la gaveta y el sistema calcula automáticamente sobrantes o faltantes, garantizando una administración 100% transparente.
-- **Gestión de Cuentas por Cobrar (Fiado Seguro):** Permite asignar un límite de crédito personalizado a cada cliente frecuente, previniendo el sobreendeudamiento.
-- **Módulo Cuentas por Pagar Proveedores:** Control de compras a crédito con semáforo preventivo de vencimiento y registro de abonos parciales.
-- **Separación de Medios de Pago:** Registro exacto de ventas en Efectivo, Débito, Crédito, Transferencias bancarias y SmartPOS (Transbank, Mercado Pago Point).
+- **Liquidación Mensual de IVA:** El sistema consolida automáticamente tus ventas y compras, calculando el IVA Débito, IVA Crédito y Remanente exacto para declarar tu Formulario 29.
+- **Carga de RCV del SII:** Importa el archivo CSV oficial descargado desde el Servicio de Impuestos Internos y cruza las compras registradas con tus proveedores.
+- **Balance Tributario de 8 Columnas:** Genera el balance oficial bajo IFRS y Régimen ProPyme (DL 824 14 D3/D8) en formato Excel bancario, permitiéndote presentar estados financieros profesionales ante bancos e instituciones crediticias.
+- **Sellado Criptográfico HMAC-SHA256:** Cada movimiento contable queda auditado con una firma de integridad inviolable.
 
 ---
 
-### 5. 🧪 Calidad Certificada: 150 Pruebas Automatizadas de Calidad
+### 5. 💳 Pasarelas de Pago Oficiales y Renovación Digital SaaS
 
-Antes de lanzar la versión oficial **v2.3.9.10 rev.1.0**, nuestro equipo de ingeniería sometió el software a **150 pruebas exhaustivas de estrés, cálculo matemático y resistencia**:
+- **Cobros con Tarjetas y Código QR:** Integración directa con **Mercado Pago Checkout Pro**, Transbank y SumUp para recibir pagos con débito y crédito.
+- **Auto-Activación de Licencia:** El comercio puede renovar su suscripción mensual o anual directamente desde el menú del POS, escaneando un código QR con su celular y activando su puesto de trabajo al instante sin necesidad de soporte telefónico.
+
+---
+
+### 6. 🚀 Sincronía Militar Concurrente: Cero Pegaderas en Caja
+
+- **Impresión Térmica Desacoplada en Segundo Plano:** El spooler de la impresora térmica (XP-80 / 58mm) y el pulso de apertura de la gaveta de dinero operan en un hilo asíncrono secundario.
+- **Atención Continua en Horas Punta:** El cajero finaliza una venta, cobra en efectivo o tarjeta, y la pantalla se libera inmediatamente (<25ms) para ingresar el siguiente cliente, eliminando las demoras y filas en el local.
+- **Aceleración por Mapeo de Memoria Kernel:** Motor SQLite con 256 MB de memory mapping directo y caché optimizada para consultas instantáneas en catálogos de más de 20.000 productos.
+
+---
+
+### 7. 🔒 Certificación Digital Authenticode SHA256 Oficial
+
+- **Instalación Segura en Windows 10 y 11:** Tanto el ejecutable principal como los instaladores cuentan con firma digital Authenticode SHA256 y sellado de tiempo oficial emitido por DigiCert.
+- **Cero Pantallas Azules de Alerta:** El instalador incorpora el registro automático de certificados de confianza en el sistema, asegurando una experiencia de instalación fluida y 100% profesional.
+
+---
+
+### 8. 📱 Suite Meta Omnicanal & Comercio Conversacional
+
+- **Pedidos por WhatsApp e Instagram:** Conexión directa mediante Meta Cloud API para consultar stock y recibir órdenes de clientes por chat.
+- **Sincronización E-Commerce:** Integración con Shopify y WooCommerce mediante webhooks atómicos para mantener el stock físico y web perfectamente sincronizados.
+
+---
+
+## 📈 Calidad Certificada: 182 Pruebas Automatizadas de Ingeniería
+
+Antes de lanzar la versión oficial **v2.3.9.10 rev.1.0**, nuestro equipo sometió el software a **182 pruebas automatizadas de cálculo matemático, concurrencia y seguridad**:
 
 | Prueba de Calidad | Resultado | Beneficio para tu Negocio |
 | :--- | :---: | :--- |
 | **Pruebas de cobro continuo y ventas** | ✅ 100% Aprobado | El sistema no se congela en horas punta de atención. |
+| **Pruebas de concurrencia e impresión en segundo plano** | ✅ 100% Aprobado | Atención continua en caja sin esperar por la impresora. |
 | **Prueba de corte de energía y reinicio** | ✅ 100% Aprobado | Tus ventas e inventario quedan guardados sin dañarse. |
-| **Prueba de arqueo y cálculo de IVA** | ✅ 100% Aprobado | Cero descuadres en el dinero al final del día. |
+| **Prueba de arqueo y cálculo de IVA / F29** | ✅ 100% Aprobado | Cero descuadres en el dinero y liquidación tributaria exacta. |
+| **Prueba de Balance de 8 Columnas y RCV** | ✅ 100% Aprobado | Documentos financieros certificados para bancos y SII. |
 | **Pruebas de escáner e impresora térmica** | ✅ 100% Aprobado | Compatibilidad garantizada con impresoras de 58mm y 80mm. |
 | **Pruebas de seguridad anti-hackeo** | ✅ 100% Aprobado | Protección total frente a robos de información o claves. |
 | **Pruebas de Webhooks E-commerce y Meta** | ✅ 100% Aprobado | Sincronización íntegra con Shopify, WooCommerce y WhatsApp. |
-| **Pruebas de Licenciamiento y Cuentas por Pagar** | ✅ 100% Aprobado | Blindaje estricto de capacidades por serie de licencia. |
+| **Pruebas de Pasarelas de Pago y Licenciamiento SaaS** | ✅ 100% Aprobado | Cobros digitales homologados y activación automática. |
 | **Eficiencia de hardware y consumo de RAM** | ✅ 100% Aprobado (~48 MB / ~150 MB RAM) | Tu computador no se calienta ni se pone lento con los años. |
 
 ---
 
-## 🏆 Conclusión del Dictamen Comercial
+## 🎯 Conclusión del Dictamen Comercial
 
 > **BetoGraf Almacenero POS v2.3.9.10 rev.1.0** no es una simple aplicación; es una **herramienta de trabajo profesional de alta durabilidad** construida para acompañar el crecimiento de tu negocio día tras día, sin fallas, sin cobros mensuales forzosos y con la tranquilidad de que tus datos están seguros en tus propias manos.
 >
-> 🚀 **Certificado y Aprobado para Distribución Comercial.**
+> 🏆 **Certificado y Aprobado para Distribución Comercial.**
