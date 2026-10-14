@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Omnicanal - BetoGraf Almacenero POS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --bg: #09090b;
+            --card: #121215;
+            --accent: #0ea5e9;
+            --accent-glow: rgba(14, 165, 233, 0.15);
+            --text-main: #f4f4f5;
+            --text-muted: #a1a1aa;
+            --border: rgba(255, 255, 255, 0.05);
+            --emerald: #10b981;
+            --emerald-glow: rgba(16, 185, 129, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(9, 9, 11, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #0ea5e9, #10b981);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 20px rgba(14, 165, 233, 0.3);
+        }
+
+        .logo-text {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+        }
+
+        .version-badge {
+            font-size: 0.75rem;
+            background: var(--accent-glow);
+            color: var(--accent);
+            padding: 0.25rem 0.75rem;
+            border-radius: 99px;
+            border: 1px solid rgba(14, 165, 233, 0.3);
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        nav {
+            position: sticky;
+            top: 6rem;
+            height: fit-content;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav li {
+            margin-bottom: 0.5rem;
+        }
+
+        nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.2s;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.03);
+            color: var(--text-main);
+        }
+
+        nav a.active {
+            background: var(--accent-glow);
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        main {
+            padding-bottom: 5rem;
+        }
+
+        section {
+            padding: 2.5rem;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            margin-bottom: 3rem;
+            scroll-margin-top: 6rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--text-main);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding-bottom: 0.75rem;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin: 2rem 0 1rem;
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        h4 {
+            font-size: 1rem;
+            margin: 1.5rem 0 0.5rem;
+            color: var(--text-main);
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            color: var(--text-muted);
+            font-size: 0.975rem;
+        }
+
+        ol, ul {
+            margin-left: 1.75rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+        }
+
+        .step-card {
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 14px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--accent);
+        }
+
+        .step-card-emerald {
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 14px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--emerald);
+        }
+
+        .warning-box {
+            background: rgba(239, 68, 68, 0.08);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            padding: 1.25rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .warning-box i { color: #ef4444; }
+
+        .tip-box {
+            background: rgba(16, 185, 129, 0.08);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            padding: 1.25rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .tip-box i { color: var(--emerald); }
+
+        code {
+            background: #000;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-family: 'Courier New', Courier, monospace;
+            color: #fbbf24;
+            font-size: 0.9em;
+        }
+
+        pre {
+            background: #050507;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        pre code {
+            background: transparent;
+            padding: 0;
+            color: #38bdf8;
+            font-family: 'Fira Code', 'Courier New', Courier, monospace;
+            font-size: 0.875rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 4rem 2rem;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        .tigre-signature {
+            color: var(--emerald);
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 900px) {
+            .container { grid-template-columns: 1fr; }
+            nav { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <div class="logo-icon">
+            <i data-lucide="globe" style="color: white; width: 20px;"></i>
+        </div>
+        <div class="logo-text">BetoGraf <span style="color: var(--accent)">Omnicanal</span></div>
+    </div>
+    <div class="version-badge">v2.3.9.10 rev.1.0 PRO</div>
+</header>
+
+<div class="container">
+    <nav>
+        <ul>
+            <li><a href="#intro" class="active"><i data-lucide="compass" class="w-4 h-4"></i> Introducción</a></li>
+            <li><a href="#webhook"><i data-lucide="link" class="w-4 h-4"></i> Enlace de Conexión</a></li>
+            <li><a href="#woocommerce"><i data-lucide="shopping-bag" class="w-4 h-4"></i> WooCommerce</a></li>
+            <li><a href="#shopify"><i data-lucide="shopping-cart" class="w-4 h-4"></i> Shopify</a></li>
+            <li><a href="#social"><i data-lucide="message-square" class="w-4 h-4"></i> Redes Sociales</a></li>
+            <li><a href="#caja"><i data-lucide="coins" class="w-4 h-4"></i> Operación en Caja</a></li>
+            <li><a href="#tecnico"><i data-lucide="code" class="w-4 h-4"></i> Integración Técnica</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="intro">
+            <h2><i data-lucide="zap"></i> Sincronización en Tiempo Real</h2>
+            <p>Bienvenido al **Manual de Conexión Omnicanal** de **BetoGraf POS**. Este manual te guiará paso a paso para integrar tu tienda en línea y tus canales de comunicación de redes sociales directamente con tu punto de venta local.</p>
+            
+            <div class="tip-box">
+                <i data-lucide="sparkles"></i>
+                <div>
+                    <strong>Ventaja Omnicanal:</strong> Al conectar tus tiendas virtuales, los pedidos ingresan automáticamente a la caja, permitiendo cobrarlos con un clic y manteniendo tu inventario perfectamente sincronizado de inmediato.
+                </div>
+            </div>
+        </section>
+
+        <section id="webhook">
+            <h2><i data-lucide="link"></i> Paso 1: Obtener tu Enlace de Conexión</h2>
+            <p>Para recibir pedidos de internet en tu pantalla de caja, necesitas copiar tu dirección única de conexión webhook:</p>
+            <div class="step-card">
+                <ol style="margin-left: 1.5rem;">
+                    <li>Abre <strong>BetoGraf POS</strong> en tu computador.</li>
+                    <li>Ve a la pestaña de <strong>Administración / Configuración</strong>.</li>
+                    <li>Selecciona la pestaña <strong>Redes y Web</strong>.</li>
+                    <li>Asegúrate de marcar las casillas <strong>Activar Cloud Sync</strong> y <strong>Omnicanalidad Activa</strong>.</li>
+                    <li>Copia el enlace webhook generado (se verá similar a <code>https://tu-proyecto.supabase.co/functions/orders-intake</code>).</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="woocommerce">
+            <h2><i data-lucide="shopping-bag"></i> Conexión con WooCommerce (WordPress)</h2>
+            <p>Sigue estas instrucciones visuales sencillas para conectar tu tienda WordPress:</p>
+            <div class="step-card-emerald">
+                <ol style="margin-left: 1.5rem;">
+                    <li>Entra al administrador de tu sitio WordPress.</li>
+                    <li>En el menú de la izquierda, haz clic en <strong>WooCommerce</strong> y luego en <strong>Ajustes</strong>.</li>
+                    <li>Presiona la pestaña <strong>Avanzado</strong> en la parte superior derecha, y luego haz clic en <strong>Webhooks</strong>.</li>
+                    <li>Presiona el botón <strong>Añadir Webhook</strong> y rellena los campos:
+                        <ul style="margin-left: 1.5rem; margin-top: 0.5rem; list-style-type: disc;">
+                            <li><strong>Nombre:</strong> <code>BetoGraf POS</code></li>
+                            <li><strong>Estado:</strong> Selecciona <strong>Activo</strong>.</li>
+                            <li><strong>Tema:</strong> Elige <strong>Pedido creado</strong>.</li>
+                            <li><strong>URL de entrega:</strong> Pega el enlace que copiaste en el Paso 1.</li>
+                            <li><strong>Versión de la API:</strong> Elige la opción <strong>v3</strong>.</li>
+                        </ul>
+                    </li>
+                    <li>Haz clic en <strong>Guardar Webhook</strong>. ¡Listo!</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="shopify">
+            <h2><i data-lucide="shopping-cart"></i> Conexión con Shopify</h2>
+            <p>Si tu e-commerce funciona sobre Shopify, configúralo de la siguiente manera:</p>
+            <div class="step-card-emerald">
+                <ol style="margin-left: 1.5rem;">
+                    <li>Ingresa al administrador de tu tienda Shopify.</li>
+                    <li>Abajo a la izquierda, presiona el engranaje de <strong>Configuración</strong>.</li>
+                    <li>Busca en el menú lateral la opción <strong>Notificaciones</strong> y baja hasta la sección final llamada <strong>Webhooks</strong>.</li>
+                    <li>Haz clic en <strong>Crear Webhook</strong> e ingresa:
+                        <ul style="margin-left: 1.5rem; margin-top: 0.5rem; list-style-type: disc;">
+                            <li><strong>Evento:</strong> Selecciona <strong>Creación de pedido</strong> (order/create).</li>
+                            <li><strong>Formato:</strong> Selecciona <strong>JSON</strong>.</li>
+                            <li><strong>URL:</strong> Pega el enlace de conexión del Paso 1.</li>
+                        </ul>
+                    </li>
+                    <li>Guarda los cambios. ¡Listo!</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="social">
+            <h2><i data-lucide="message-square"></i> Conexión con WhatsApp e Instagram</h2>
+            <p>Para automatizar la recepción de pedidos desde chats de clientes:</p>
+            <ul>
+                <li>Si utilizas un Bot Conversacional (como ManyChat, Landbot o desarrollo propio), solicita a tu programador que configure el envío de la orden convertida al enlace que copiaste en el Paso 1.</li>
+                <li>El bot transmitirá el nombre del cliente, número celular, productos e indicaciones directamente al POS de caja.</li>
+            </ul>
+
+            <div class="warning-box">
+                <i data-lucide="alert-triangle"></i>
+                <div>
+                    <strong>Regla Crítica de Inventario:</strong> Los códigos de barras (o SKU) de tus productos en WooCommerce o Shopify deben ser exactamente iguales a los que registraste dentro de BetoGraf POS para que la caja reconozca el producto y descuente stock correctamente.
+                </div>
+            </div>
+        </section>
+
+        <section id="caja">
+            <h2><i data-lucide="coins"></i> Operación de Pedidos en Caja</h2>
+            <p>Cuando entre un pedido en línea por internet o chat:</p>
+            <div class="step-card">
+                <ol style="margin-left: 1.5rem;">
+                    <li>Aparecerá un aviso visual en la esquina superior derecha de la pantalla de Ventas.</li>
+                    <li>En el panel lateral derecho del POS, en la sección <strong>Pedidos Online</strong>, verás las órdenes entrantes.</li>
+                    <li>Haz <strong>doble clic</strong> en el pedido para cargar automáticamente todos los productos al carro de compras.</li>
+                    <li>Modifica el pedido si el cliente te pide cambios de último momento, o presiona directamente <strong>Cobrar / Imprimir Boleta</strong> para concretar la venta.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="tecnico">
+            <h2><i data-lucide="code"></i> Especificaciones Técnicas (Desarrolladores)</h2>
+            <p>El POS consume un endpoint unificado en la nube hospedado en Supabase que normaliza la ingesta.</p>
+            
+            <h4>Flujo Operativo de Datos</h4>
+            <pre><code>[Canal E-commerce / Bot Chat]
+            │
+            ▼ (HTTP POST Webhook JSON)
+  [Supabase Edge Function: intake]
+            │
+            ▼ (Inserta en Tabla Cloud)
+   [BetoGraf POS Polling Local]
+            │
+            ▼ (Importa, deduplica por webhook_ref y procesa)
+   [HTTP PATCH: ack_online_orders a Nube]</code></pre>
+
+            <h4>Estructura de Payload JSON Requerida</h4>
+            <pre><code>{
+  "origen": "whatsapp",
+  "webhook_ref": "identificador_unico_de_orden_o_mensaje",
+  "customer_name": "Nombre de Cliente",
+  "customer_phone": "+56912345678",
+  "customer_address": "Av. Principal 123, Depto 40",
+  "message_text": "Texto opcional enviado por el usuario",
+  "items": [
+    {
+      "codigo_barras": "7801234567890",
+      "cantidad": 2,
+      "precio_unitario": 1200
+    }
+  ],
+  "total": 2400,
+  "notes": "Notas adicionales de despacho"
+}</code></pre>
+
+            <div class="tip-box">
+                <i data-lucide="info"></i>
+                <div>
+                    <strong>Fusión de Mensajes (WhatsApp/Instagram):</strong> El POS implementa acumulación conversacional basada en <code>conversation_ref</code>, lo cual evita crear pedidos múltiples si un mismo usuario envía complementos de pedidos sucesivos.
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<footer>
+    <p>&copy; 2026 BetoGraf Almacenero. Todos los derechos reservados.</p>
+    <div class="tigre-signature">Diseñado y Desarrollado por <a href="https://instagram.com/betograf_inc" target="_blank" style="color: inherit; text-decoration: none;">Omar Toledo @betograf_inc</a></div>
+</footer>
+
+<script>
+    lucide.createIcons();
+
+    // Smooth scroll active nav state
+    window.addEventListener('scroll', () => {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+        
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (pageYOffset >= sectionTop - 120) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').includes(current)) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -165,6 +165,22 @@ El sistema adapta sus capacidades dinámicamente según la serie de licencia act
 
 ---
 
+## 📚 Centro de Documentación y Manuales Oficiales
+
+Accede a la documentación técnica y guías paso a paso de BetoGraf POS, disponibles tanto en formato interactivo enriquecido (HTML autónomo para abrir en cualquier navegador) como en Markdown nativo para lectura directa en GitHub:
+
+| Manual / Guía | Formato Interactivo (HTML) | Formato Markdown (.md) | Descripción Técnica |
+| :--- | :---: | :---: | :--- |
+| **📖 Manual de Usuario General** | [Ver HTML](./manuales/Manual_Usuario_BetoGraf.html) | [Leer en GitHub](./docs/manual_usuario.md) | Operación de Punto de Venta, caja, ventas, configuración, arqueo e inventario. |
+| **🌐 Manual Omnicanal BetoGraf** | [Ver HTML](./manuales/Manual_Omnicanal_BetoGraf.html) | [Leer en GitHub](./docs/manual_omnicanal.md) | Sincronización en la Nube (Cloud Sync), recepción y carga de pedidos web. |
+| **💬 Meta Omnichannel (WhatsApp & Instagram)** | [Ver HTML](./manuales/Manual_Meta_Omnicanal_Onboarding.html) | [Leer en GitHub](./docs/manual_meta_onboarding.md) | Onboarding paso a paso para WhatsApp Business Cloud API e Instagram Messaging. |
+| **🔌 Conexión de Webhooks (E-Commerce)** | [Ver HTML](./manuales/Manual_Integracion_Ecommerce.html) | [Leer en GitHub](./docs/Manual_Integracion_Ecommerce.md) | Integración con WooCommerce, Shopify y tiendas web externas con sincronización de stock. |
+| **💳 Equipos POS y Pasarelas de Pago** | [Ver HTML](./manuales/Manual_Equipos_POS.html) | [Leer en GitHub](./docs/Manual_Equipos_POS.md) | Conexión e integración con Mercado Pago Smart Point, Transbank, SumUp y Flow. |
+| **🏷️ Guía de Precios, Costos e Impuestos** | — | [Leer en GitHub](./docs/guia_ingreso_precios.md) | Fórmulas tributarias, IVA (19%), precios netos, brutos y margen de ganancia. |
+| **☁️ Telemetría y Salud en Supabase** | — | [Leer en GitHub](./docs/telemetria_supabase.md) | Monitoreo en segundo plano, diagnósticos y reportes de estado del terminal. |
+
+---
+
 ## 📞 Soporte Comercial y Asesoría Directa
 
 <div align="center">

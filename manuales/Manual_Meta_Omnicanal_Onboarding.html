@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Meta Omnichannel - BetoGraf Almacenero POS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --bg: #09090b;
+            --card: #121215;
+            --card-inner: rgba(255, 255, 255, 0.03);
+            --accent: #25d366; /* WhatsApp Green */
+            --accent-glow: rgba(37, 211, 102, 0.15);
+            --instagram: #e1306c;
+            --meta-blue: #0ea5e9;
+            --text-main: #f4f4f5;
+            --text-muted: #a1a1aa;
+            --border: rgba(255, 255, 255, 0.07);
+            --emerald: #10b981;
+            --emerald-glow: rgba(16, 185, 129, 0.15);
+            --amber: #f59e0b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(9, 9, 11, 0.85);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--border);
+            padding: 1.25rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, #25d366, #0ea5e9);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 25px rgba(37, 211, 102, 0.35);
+        }
+
+        .logo-text {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+        }
+
+        .version-badge {
+            font-size: 0.75rem;
+            background: var(--accent-glow);
+            color: var(--accent);
+            padding: 0.3rem 0.8rem;
+            border-radius: 99px;
+            border: 1px solid rgba(37, 211, 102, 0.3);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 290px 1fr;
+            gap: 2.5rem;
+            padding: 2.5rem 2rem;
+        }
+
+        nav {
+            position: sticky;
+            top: 6rem;
+            height: fit-content;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav li {
+            margin-bottom: 0.5rem;
+        }
+
+        nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.2s;
+            font-size: 0.925rem;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.04);
+            color: var(--text-main);
+        }
+
+        nav a.active {
+            background: var(--accent-glow);
+            color: var(--accent);
+            font-weight: 600;
+            border-left: 3px solid var(--accent);
+        }
+
+        main {
+            padding-bottom: 5rem;
+        }
+
+        section {
+            padding: 2.5rem;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            margin-bottom: 2.5rem;
+            scroll-margin-top: 6rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+            color: var(--text-main);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding-bottom: 0.85rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin: 2rem 0 1rem;
+            color: #38bdf8;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        h4 {
+            font-size: 1rem;
+            margin: 1.25rem 0 0.5rem;
+            color: var(--text-main);
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        ol, ul {
+            margin-left: 1.75rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 0.65rem;
+        }
+
+        .step-card {
+            background: var(--card-inner);
+            border-radius: 14px;
+            padding: 1.5rem;
+            margin: 1.25rem 0;
+            border-left: 4px solid var(--meta-blue);
+        }
+
+        .step-card-green {
+            background: var(--card-inner);
+            border-radius: 14px;
+            padding: 1.5rem;
+            margin: 1.25rem 0;
+            border-left: 4px solid var(--accent);
+        }
+
+        .step-card-pink {
+            background: var(--card-inner);
+            border-radius: 14px;
+            padding: 1.5rem;
+            margin: 1.25rem 0;
+            border-left: 4px solid var(--instagram);
+        }
+
+        .warning-box {
+            background: rgba(239, 68, 68, 0.08);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            padding: 1.25rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .warning-box i, .warning-box svg { color: #ef4444; flex-shrink: 0; }
+
+        .tip-box {
+            background: rgba(16, 185, 129, 0.08);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            padding: 1.25rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .tip-box i, .tip-box svg { color: var(--emerald); flex-shrink: 0; }
+
+        code {
+            background: #000;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-family: 'Fira Code', monospace;
+            color: #fbbf24;
+            font-size: 0.88em;
+        }
+
+        pre {
+            background: #050507;
+            padding: 1.25rem 1.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            overflow-x: auto;
+            margin: 1.25rem 0;
+            position: relative;
+        }
+
+        pre code {
+            background: transparent;
+            padding: 0;
+            color: #38bdf8;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.85rem;
+        }
+
+        .badge-tag {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .badge-get { background: rgba(56, 189, 248, 0.2); color: #38bdf8; }
+        .badge-post { background: rgba(16, 185, 129, 0.2); color: #10b981; }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+            margin: 1.5rem 0;
+        }
+
+        @media (max-width: 900px) {
+            .container { grid-template-columns: 1fr; }
+            .grid-2 { grid-template-columns: 1fr; }
+            nav { display: none; }
+        }
+
+        footer {
+            text-align: center;
+            padding: 2.5rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo-icon">
+                <i data-lucide="message-circle" style="color: white; width: 22px; height: 22px;"></i>
+            </div>
+            <div>
+                <div class="logo-text">BetoGraf POS</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">Meta Omnichannel Suite (WhatsApp & Instagram)</div>
+            </div>
+        </div>
+        <div class="version-badge">
+            <i data-lucide="shield-check" style="width: 14px; height: 14px;"></i>
+            v2.3.9.10 rev.1.0 Enterprise
+        </div>
+    </header>
+
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#prerrequisitos" class="active"><i data-lucide="check-circle-2"></i> 1. Prerrequisitos</a></li>
+                <li><a href="#system-user"><i data-lucide="key"></i> 2. System User & Token</a></li>
+                <li><a href="#catalogo"><i data-lucide="shopping-bag"></i> 3. Catálogo & Sincronización</a></li>
+                <li><a href="#webhooks"><i data-lucide="webhook"></i> 4. Webhooks & Verificación</a></li>
+                <li><a href="#flujo-ventas"><i data-lucide="credit-card"></i> 5. Flujo de Pedidos & Cobro</a></li>
+                <li><a href="#seguridad"><i data-lucide="shield-alert"></i> 6. Seguridad & Auditoría</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- SECCIÓN 1: PRERREQUISITOS -->
+            <section id="prerrequisitos">
+                <h2><i data-lucide="check-circle-2" style="color: var(--accent);"></i> 1. Prerrequisitos en la Suite de Meta</h2>
+                <p>Para conectar exitosamente BetoGraf POS con WhatsApp Business Cloud API e Instagram Messaging, asegúrate de contar con los siguientes elementos activos en Meta:</p>
+
+                <div class="step-card">
+                    <h4>A. Meta Business Manager Verificado</h4>
+                    <p>Ingresa a <code>business.facebook.com</code>. Tu empresa debe estar verificada en el Centro de Seguridad de Meta con su razón social o RUT legal.</p>
+                </div>
+
+                <div class="step-card-green">
+                    <h4>B. WhatsApp Business Account (WABA) Dedicada</h4>
+                    <p>Necesitas un número telefónico activo que <strong>no esté registrado</strong> en la app móvil común de WhatsApp. Este número quedará alojado directamente en los servidores en la nube de Meta.</p>
+                </div>
+
+                <div class="step-card-pink">
+                    <h4>C. Perfil de Instagram Business Vinculado</h4>
+                    <p>La cuenta de Instagram debe ser de categoría <strong>Profesional / Negocio</strong> y encontrarse enlazada a la Fanpage de Facebook del establecimiento.</p>
+                </div>
+
+                <div class="warning-box">
+                    <i data-lucide="alert-triangle"></i>
+                    <div>
+                        <strong>Requisito de Conectividad HTTPS:</strong>
+                        <p style="margin: 0; margin-top: 0.25rem;">Meta exige que los Webhooks operen estrictamente sobre certificados TLS válidos (HTTPS). Si el POS opera en red local sin dominio público, utiliza <code>Cloudflare Tunnels</code> o <code>Ngrok</code> apuntando al puerto local del POS.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 2: SYSTEM USER & TOKEN -->
+            <section id="system-user">
+                <h2><i data-lucide="key" style="color: #38bdf8;"></i> 2. Creación de System User y Token Permanente</h2>
+                <p>Para evitar desconexiones mensuales por vencimiento de tokens de usuario, es imprescindible crear un <strong>Usuario del Sistema</strong> en Meta Business Manager.</p>
+
+                <div class="step-card">
+                    <h4>Paso a Paso de Configuración:</h4>
+                    <ol>
+                        <li>En <strong>Meta Business Manager</strong>, ve a <strong>Configuración del Negocio &gt; Usuarios &gt; Usuarios del sistema</strong>.</li>
+                        <li>Haz clic en <strong>Agregar</strong>, asigna el nombre <code>BetoGraf-POS-Bot</code> con rol de <em>Empleado</em> o <em>Administrador</em>.</li>
+                        <li>Haz clic en <strong>Asignar activos</strong> y concede permisos de control total sobre:
+                            <ul>
+                                <li>Tu cuenta de WhatsApp Business (WABA).</li>
+                                <li>Tu Catálogo de Productos (Meta Commerce Manager).</li>
+                                <li>Tu Página de Facebook e Instagram vinculada.</li>
+                            </ul>
+                        </li>
+                        <li>Haz clic en <strong>Generar nuevo token</strong>:
+                            <ul>
+                                <li>Selecciona tu App en Meta Developers.</li>
+                                <li>Vigencia: <strong>Nunca caduca (Never Expires)</strong>.</li>
+                                <li>Marca obligatoriamente los siguientes alcances (scopes):</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="tip-box">
+                    <i data-lucide="check"></i>
+                    <div>
+                        <strong>Permisos Obligatorios en el Token:</strong>
+                        <p style="margin-top: 0.5rem; margin-bottom: 0;">
+                            <code>whatsapp_business_messaging</code> &bull;
+                            <code>whatsapp_business_management</code> &bull;
+                            <code>catalog_management</code> &bull;
+                            <code>instagram_basic</code> &bull;
+                            <code>instagram_manage_messages</code> &bull;
+                            <code>pages_manage_metadata</code>
+                        </p>
+                    </div>
+                </div>
+
+                <p>Copia el token generado y pégalo en BetoGraf POS en: <strong>Configuración &gt; Redes y Web &gt; Meta Omnichannel &gt; System User Access Token</strong>.</p>
+            </section>
+
+            <!-- SECCIÓN 3: CATÁLOGO Y FEED -->
+            <section id="catalogo">
+                <h2><i data-lucide="shopping-bag" style="color: var(--emerald);"></i> 3. Catálogo de Productos & Sincronización</h2>
+                <p>BetoGraf POS publica automáticamente tus productos del almacén para que tus clientes puedan explorar el inventario con fotos, descripción, precio y disponibilidad directamente en el chat.</p>
+
+                <div class="grid-2">
+                    <div class="step-card-green">
+                        <h4>Opción A: Feed Programado (RSS 2.0 XML)</h4>
+                        <p>En Meta Commerce Manager, añade un origen de datos tipo <em>Feed de datos programado</em> (actualización diaria o horaria) con esta URL:</p>
+                        <pre><code>https://tu-dominio.cl/webhooks/meta/catalog/feed.xml</code></pre>
+                        <p style="font-size: 0.85rem;">El endpoint genera XML estándar compatible con Google Shopping y Facebook Catalog con codificación UTF-8.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <h4>Opción B: Sincronización Instantánea API</h4>
+                        <p>Para empujar cambios de precios o nuevos productos al instante sin esperar el rastreo del feed:</p>
+                        <p>Ingresa a <strong>BetoGraf POS &gt; Configuración &gt; Meta Omnichannel</strong> y presiona el botón:</p>
+                        <div style="text-align: center; margin: 1rem 0;">
+                            <span style="background: rgba(14, 165, 233, 0.2); border: 1px solid #0ea5e9; color: #38bdf8; padding: 0.6rem 1.2rem; border-radius: 8px; font-weight: 600; font-size: 0.9rem;">
+                                <i data-lucide="refresh-cw" style="width: 14px; height: 14px; display: inline-block; vertical-align: middle;"></i> Sincronizar Catálogo Ahora
+                            </span>
+                        </div>
+                        <p style="font-size: 0.85rem;">Utiliza el endpoint Graph API <code>items_batch</code> con lotes de hasta 4999 productos.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 4: WEBHOOKS & VERIFICACIÓN -->
+            <section id="webhooks">
+                <h2><i data-lucide="webhook" style="color: var(--accent);"></i> 4. Configuración del Webhook en Meta Developers</h2>
+                <p>Para recibir mensajes, respuestas interactivas y pedidos enviados por los clientes en tiempo real:</p>
+
+                <div class="step-card">
+                    <h4>A. Configurar el Handshake de Verificación</h4>
+                    <ol>
+                        <li>En tu aplicación en <strong>developers.facebook.com</strong>, agrega el producto <strong>Webhooks</strong>.</li>
+                        <li>Configura el endpoint unificado:
+                            <ul>
+                                <li><strong>URL de devolución de llamada:</strong> <code>https://tu-dominio.cl/webhooks/meta/</code></li>
+                                <li><strong>Token de verificación:</strong> Ingresa la clave secreta que definiste en el campo <code>Verify Token</code> de BetoGraf POS.</li>
+                            </ul>
+                        </li>
+                        <li>Haz clic en <strong>Verificar y guardar</strong>. BetoGraf responderá automáticamente con el <code>hub.challenge</code> validando la identidad.</li>
+                    </ol>
+                </div>
+
+                <div class="step-card-green">
+                    <h4>B. Suscripción de Eventos</h4>
+                    <p>En el panel del Webhook de WhatsApp e Instagram, suscríbete activamente al evento:</p>
+                    <ul>
+                        <li><span class="badge-tag badge-post">POST</span> <code>messages</code>: Recepción de pedidos, carritos interactivos y texto.</li>
+                    </ul>
+                </div>
+
+                <div class="warning-box">
+                    <i data-lucide="shield-alert"></i>
+                    <div>
+                        <strong>Seguridad Criptográfica HMAC SHA-256:</strong>
+                        <p style="margin: 0; margin-top: 0.25rem;">Copia el <strong>Secreto de la aplicación (App Secret)</strong> desde Meta Developers y pégalo en el POS. El middleware interno validará la cabecera <code>X-Hub-Signature-256</code> en cada petición para neutralizar ataques de suplantación o inyección.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 5: FLUJO DE PEDIDOS & COBRO -->
+            <section id="flujo-ventas">
+                <h2><i data-lucide="credit-card" style="color: var(--amber);"></i> 5. Flujo Transaccional Automatizado</h2>
+                <p>Ciclo de vida de una orden omnicanal desde la conversación hasta el cierre de caja:</p>
+
+                <div class="step-card">
+                    <h4>1. Recepción y Creación Atómica</h4>
+                    <p>Cuando el cliente envía su carrito por WhatsApp o Instagram, BetoGraf POS valida la existencia y stock en tiempo real, crea el registro en <code>MetaOrdenes</code> y genera un <code>Pedido</code> pendiente en la base de datos local (cifrada con SQLCipher).</p>
+                </div>
+
+                <div class="step-card-green">
+                    <h4>2. Generación Dinámica del Link de Pago</h4>
+                    <p>Si la opción <em>Envío Automático de Link de Pago</em> está habilitada, el POS invoca el proveedor configurado (<strong>Mercado Pago</strong> o <strong>Flow</strong>), genera la pasarela y envía de vuelta al chat del cliente un mensaje interactivo con botón directo de pago:</p>
+                    <pre><code>¡Hola Juan! Recibimos tu pedido #1042 por $14.990.
+Puedes pagar de forma segura en el siguiente botón:
+[💳 Pagar con Webpay / Mercado Pago]</code></pre>
+                </div>
+
+                <div class="step-card">
+                    <h4>3. Cierre y Actualización de Inventario</h4>
+                    <p>Al completarse el pago, la pasarela notifica el webhook de cobro, el POS actualiza el estado a <strong>PAGADO</strong>, descuenta las unidades en el Kardex y notifica al cliente que su pedido está listo para despacho o retiro.</p>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 6: AUDITORÍA & LOGS -->
+            <section id="seguridad">
+                <h2><i data-lucide="shield-check" style="color: var(--meta-blue);"></i> 6. Monitoreo, Salud y Telemetría</h2>
+                <p>Toda la actividad omnicanal queda trazada y auditada con tolerancia a fallos:</p>
+
+                <ul>
+                    <li><strong>Registro de Sincronización:</strong> La tabla <code>MetaCatalogSyncLogs</code> registra cada lote enviado, productos subidos y errores reportados por Meta.</li>
+                    <li><strong>Health Checks:</strong> El endpoint <code>/health/extended/</code> reporta en tiempo real la salud de la cola de mensajes, la vigencia de la licencia y la conectividad con Supabase.</li>
+                    <li><strong>Aislamiento Local:</strong> Las operaciones críticas no se detienen si la conexión a internet fluctúa; los pedidos quedan encolados localmente para reintento con backoff exponencial.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        BetoGraf Almacenero POS &bull; Módulo Omnicanal Meta &bull; Diseñado con Arquitectura Limpia y Resiliencia Empresarial
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Smooth scroll highlighting for nav
+        const links = document.querySelectorAll('nav a');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            document.querySelectorAll('section').forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 120) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            links.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
