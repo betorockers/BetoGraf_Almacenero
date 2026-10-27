@@ -33,8 +33,7 @@
 
   <p>
     📜 <b><a href="./CERTIFICACION_Y_CALIDAD.md">Lee aquí el Dictamen de Certificación Comercial, Rendimiento y Seguridad v2.3.9.14</a></b><br />
-    ⚡ <b><a href="./COMPARATIVA_RENDIMIENTO.md">¿Por qué BetoGraf pesa ~51.5 MB mientras otros sistemas superan 1 GB? Lee la comparativa técnica aquí</a></b><br />
-    🌐 <b><a href="./docs/manual_tecnico_multicaja.md">Consulta el Manual Oficial de Arquitectura e Instalación Multi-Caja LAN</a></b>
+    ⚡ <b><a href="./COMPARATIVA_RENDIMIENTO.md">¿Por qué BetoGraf pesa ~51.5 MB mientras otros sistemas superan 1 GB? Lee la comparativa técnica aquí</a></b>
   </p>
 </div>
 
@@ -299,7 +298,6 @@ Consulta los manuales completos en formato Markdown (.md) disponibles en la carp
 | Manual / Guía | Documento | Lo que aprenderás |
 | :--- | :---: | :--- |
 | **📖 Manual de Usuario General** | [manual_usuario.md](./docs/manual_usuario.md) | Venta rápida en caja, apertura y cierre ciego, inventario y productos. |
-| **🌐 Manual Técnico Multi-Caja LAN** | [manual_tecnico_multicaja.md](./docs/manual_tecnico_multicaja.md) | Configuración de red LAN, roles Maestro/Satélite, Firewall y modos Directo/Cola. |
 | **📑 Manual de Contabilidad y Asistente F29** | [manual_contabilidad_f29.md](./docs/manual_contabilidad_f29.md) | Cálculo automático de F29, carga de RCV del SII y balance de 8 columnas. |
 | **💳 Pasarelas de Pago y Equipos POS** | [Manual_Equipos_POS.md](./docs/Manual_Equipos_POS.md) | Conexión con TUU SmartPOS (Haulmer), Mercado Pago Smart Point, QR y SumUp. |
 | **📱 Meta Omnichannel (WhatsApp e Instagram)** | [manual_meta_onboarding.md](./docs/manual_meta_onboarding.md) | Catálogo en redes sociales y recepción de pedidos por mensajería. |
