@@ -1,5 +1,5 @@
 # 🛡️ Certificación de Calidad, Rendimiento y Seguridad
-### BetoGraf Almacenero POS — Versión 2.3.9.10 rev.1.0 Oficial
+### BetoGraf Almacenero POS — Versión 2.3.9.14 Enterprise Oficial
 
 ---
 
@@ -107,7 +107,7 @@ BetoGraf Almacenero cumple estrictamente con el marco legal comercial vigente en
 
 ## 📈 Calidad Certificada: 182 Pruebas Automatizadas de Ingeniería
 
-Antes de lanzar la versión oficial **v2.3.9.10 rev.1.0**, nuestro equipo sometió el software a **182 pruebas automatizadas de cálculo matemático, concurrencia y seguridad**:
+Antes de lanzar la versión oficial **v2.3.9.14 Enterprise**, nuestro equipo sometió el software a **182 pruebas automatizadas de cálculo matemático, concurrencia y seguridad**:
 
 | Prueba de Calidad | Resultado | Beneficio para tu Negocio |
 | :--- | :---: | :--- |
@@ -120,12 +120,12 @@ Antes de lanzar la versión oficial **v2.3.9.10 rev.1.0**, nuestro equipo someti
 | **Pruebas de seguridad anti-hackeo** | ✅ 100% Aprobado | Protección total frente a robos de información o claves. |
 | **Pruebas de Webhooks E-commerce y Meta** | ✅ 100% Aprobado | Sincronización íntegra con Shopify, WooCommerce y WhatsApp. |
 | **Pruebas de Pasarelas de Pago y Licenciamiento SaaS** | ✅ 100% Aprobado | Cobros digitales homologados y activación automática. |
-| **Eficiencia de hardware y consumo de RAM** | ✅ 100% Aprobado (~48 MB / ~150 MB RAM) | Tu computador no se calienta ni se pone lento con los años. |
+| **Eficiencia de hardware y consumo de RAM** | ✅ 100% Aprobado (~51.5 MB / ~150 MB RAM) | Tu computador no se calienta ni se pone lento con los años. |
 
 ---
 
 ## 🎯 Conclusión del Dictamen Comercial
 
-> **BetoGraf Almacenero POS v2.3.9.10 rev.1.0** no es una simple aplicación; es una **herramienta de trabajo profesional de alta durabilidad** construida para acompañar el crecimiento de tu negocio día tras día, sin fallas, sin cobros mensuales forzosos y con la tranquilidad de que tus datos están seguros en tus propias manos.
+> **BetoGraf Almacenero POS v2.3.9.14 Enterprise** no es una simple aplicación; es una **herramienta de trabajo profesional de alta durabilidad** construida para acompañar el crecimiento de tu negocio día tras día, sin fallas, sin cobros mensuales forzosos y con la tranquilidad de que tus datos están seguros en tus propias manos.
 >
 > 🏆 **Certificado y Aprobado para Distribución Comercial.**
